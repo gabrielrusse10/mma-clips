@@ -6,45 +6,37 @@
     <title>MMA Clips — Recent Highlights</title>
     <meta
       name="description"
-      content="Recent knockouts, submissions and fight highlights from UFC, ONE, PFL, Bellator and more. Updated daily."
+      content="Every recent knockout, submission and finish from UFC, ONE, PFL, Bellator, RIZIN and more. Updated daily."
     />
-    <meta name="theme-color" content="#0b0c0f" />
+    <meta name="theme-color" content="#08090c" />
     <meta property="og:title" content="MMA Clips — Recent Highlights" />
     <meta
       property="og:description"
-      content="Recent knockouts, submissions and fight highlights from the major MMA promotions. Updated daily."
+      content="Every recent knockout, submission and finish from the major MMA promotions. Updated daily."
     />
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e11d2e'/%3E%3Cpath d='M13 9.5v13l10-6.5z' fill='%23fff'/%3E%3C/svg%3E"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff2d3f'/%3E%3Cpath d='M13 9.5v13l10-6.5z' fill='%23fff'/%3E%3C/svg%3E"
     />
   </head>
   <body>
-    <a class="skip-link" href="#results">Skip to highlights</a>
+    <a class="skip-link" href="#feed">Skip to clips</a>
 
-    <header class="masthead">
-      <div class="masthead__inner">
-        <div class="brand">
+    <header class="masthead" id="masthead">
+      <div class="shell masthead__inner">
+        <a class="brand" href="#top">
           <span class="brand__mark" aria-hidden="true"></span>
-          <div>
-            <h1 class="brand__name">MMA Clips</h1>
-            <p class="brand__tag">Knockouts, submissions and finishes from the last few weeks</p>
-          </div>
-        </div>
-        <div class="freshness">
-          <span class="freshness__dot" aria-hidden="true"></span>
-          <span id="updated-label">Loading…</span>
-        </div>
-      </div>
-    </header>
+          <span class="brand__text">
+            <span class="brand__name">MMA<em>Clips</em></span>
+            <span class="brand__tag">Every finish, every week</span>
+          </span>
+        </a>
 
-    <main>
-      <section class="controls" aria-label="Filters">
-        <div class="controls__row">
+        <div class="masthead__tools">
           <div class="search">
-            <svg class="search__icon" viewBox="0 0 20 20" aria-hidden="true">
+            <svg viewBox="0 0 20 20" aria-hidden="true">
               <path
                 d="M9 3a6 6 0 104.47 10.03l3.25 3.25 1.06-1.06-3.25-3.25A6 6 0 009 3zm0 1.5a4.5 4.5 0 110 9 4.5 4.5 0 010-9z"
                 fill="currentColor"
@@ -53,47 +45,75 @@
             <input
               id="search"
               type="search"
-              placeholder="Search fighters, events, finishes…"
+              placeholder="Search fighters, events…"
               autocomplete="off"
-              aria-label="Search highlights"
+              aria-label="Search clips"
             />
           </div>
-          <label class="sort">
-            <span>Sort</span>
-            <select id="sort" aria-label="Sort highlights">
-              <option value="rank">Trending</option>
-              <option value="newest">Newest</option>
-              <option value="views">Most viewed</option>
-            </select>
-          </label>
+          <span class="pulse" id="updated-label" title="Last refreshed">…</span>
         </div>
-        <div class="chips" id="promotions" role="group" aria-label="Filter by promotion"></div>
-      </section>
+      </div>
+    </header>
 
-      <section id="results" class="results" aria-live="polite" aria-busy="true">
-        <div class="grid" id="grid"></div>
-        <p class="status" id="status">Loading highlights…</p>
+    <main id="top">
+      <section class="hero" id="hero" hidden aria-label="Featured clip"></section>
+
+      <div class="filters" id="filters">
+        <div class="shell filters__inner">
+          <div class="chips" id="promotions" role="group" aria-label="Filter by promotion"></div>
+          <div class="filters__right">
+            <div class="segmented" id="window" role="group" aria-label="Filter by recency">
+              <button type="button" data-days="0" aria-pressed="true">All</button>
+              <button type="button" data-days="2">48h</button>
+              <button type="button" data-days="7">Week</button>
+            </div>
+            <label class="sort">
+              <span class="sr-only">Sort clips</span>
+              <select id="sort" aria-label="Sort clips">
+                <option value="rank">Trending</option>
+                <option value="newest">Newest</option>
+                <option value="views">Most viewed</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <section id="feed" class="shell feed" aria-live="polite" aria-busy="true">
+        <div id="sections"></div>
+        <p class="status" id="status"></p>
       </section>
     </main>
 
     <footer class="footer">
-      <p>
-        Clips are embedded from the promotions' official YouTube channels. All rights belong to their
-        respective owners. Rebuilt automatically every day.
-      </p>
+      <div class="shell">
+        <p>
+          Clips are embedded from each promotion's official YouTube channel — all rights belong to
+          their owners. Rebuilt automatically every day.
+        </p>
+      </div>
     </footer>
+
+    <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden>↑</button>
 
     <div class="player" id="player" hidden>
       <div class="player__backdrop" data-close></div>
       <div class="player__panel" role="dialog" aria-modal="true" aria-labelledby="player-title">
-        <button class="player__close" type="button" data-close aria-label="Close player">×</button>
+        <button class="player__close" type="button" data-close aria-label="Close">✕</button>
         <div class="player__frame" id="player-frame"></div>
         <div class="player__meta">
-          <h2 id="player-title"></h2>
-          <p id="player-sub"></p>
-          <a id="player-link" class="player__link" target="_blank" rel="noopener noreferrer">
-            Watch on YouTube ↗
-          </a>
+          <div class="player__info">
+            <h2 id="player-title"></h2>
+            <p id="player-sub"></p>
+          </div>
+          <div class="player__actions">
+            <button class="ghost" id="player-prev" type="button">‹ Prev</button>
+            <span class="player__count" id="player-count"></span>
+            <button class="ghost" id="player-next" type="button">Next ›</button>
+            <a id="player-link" class="ghost ghost--link" target="_blank" rel="noopener noreferrer">
+              YouTube ↗
+            </a>
+          </div>
         </div>
       </div>
     </div>

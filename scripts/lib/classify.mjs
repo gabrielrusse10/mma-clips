@@ -2,9 +2,57 @@
  * Decides whether a video from a promotion's channel is fight footage.
  *
  * Official channels post far more talk than fighting - pressers, embedded
- * vlogs, weigh-ins, podcasts. Scoring on the title keeps the feed watchable
- * without needing to inspect the video itself.
+ * vlogs, weigh-ins, podcasts - so titles are scored rather than trusted.
+ *
+ * Two lessons from real feeds shaped this:
+ *
+ * 1. A hard negative must not be outvoted. "UFC 330 Embedded: Vlog Series" is
+ *    never a highlight, whatever else the title says. Conversely a mild word
+ *    like "Episode" must not sink a genuine one - "Jaw-Dropping Highlights
+ *    From Contender Series Episode 1" is exactly what people came for.
+ * 2. The promotions do not all post in English. RIZIN posts Japanese, KSW
+ *    Polish, OKTAGON Czech, so those carry their own keywords.
  */
+
+/** Never a highlight, regardless of anything else in the title. */
+const HARD_NEGATIVE = [
+  /\bpress conference\b/,
+  /\bpresser\b/,
+  /\bweigh[- ]?ins?\b/,
+  /\bembedded\b/,
+  /\bvlog\b/,
+  /\bmedia day\b/,
+  /\bopen workouts?\b/,
+  /\bface ?offs?\b/,
+  /\bstare ?downs?\b/,
+  /\binterviews?\b/,
+  /\bpodcast\b/,
+  /\bpost[- ]fight show\b/,
+  /\bcountdown\b/,
+  /\bpredictions?\b/,
+  /\bhow to watch\b/,
+  /\bwatch along\b/,
+  /\bceremonial\b/,
+  /\barrivals?\b/,
+  /\bbehind the scenes\b/,
+  /\btrailer\b/,
+  /\bmerch\b/,
+  // Japanese: interview, press conference, weigh-in, fly-on-the-wall, wrap-up
+  /インタビュー/,
+  /記者会見/,
+  /計量/,
+  /密着/,
+  /総括/,
+  /舞台裏/,
+  /公開練習/,
+  // Polish / Czech: conference, weigh-in, interview
+  /\bkonferencja\b/,
+  /\bwa[żz]enie\b/,
+  /\bwywiad\b/,
+  /\bkonference\b/,
+  /\bv[áa][žz][eí]n[íi]\b/,
+  /\brozhovor\b/,
+];
 
 /** Title phrases that mark real fight footage. Weight reflects confidence. */
 const POSITIVE = [
@@ -12,66 +60,65 @@ const POSITIVE = [
   [/\bknock ?outs?\b/, 5],
   [/\bko'?s?\b/, 4],
   [/\bsubmissions?\b/, 5],
-  [/\bfinishes?\b/, 4],
+  [/\bfinish(es|ed)?\b/, 4],
   [/\bfree fight\b/, 5],
   [/\bfull fight\b/, 5],
+  [/\bmain event\b/, 4],
+  [/\bfull (event|card)\b/, 3],
+  [/\bmain card\b/, 3],
+  [/\bcompilation\b/, 3],
   [/\bbest of\b/, 3],
   [/\btop \d+\b/, 3],
-  [/\bfight night highlights\b/, 5],
   [/\bevery finish\b/, 4],
-  [/\bbrutal\b/, 2],
-  [/\bviolent\b/, 2],
   [/\bslugfest\b/, 3],
-  [/\bwar\b/, 1],
-  [/\bcomeback\b/, 2],
   [/\bwalk ?off\b/, 3],
   [/\bflying knee\b/, 3],
   [/\bhead ?kick\b/, 3],
   [/\bguillotine\b/, 3],
   [/\brear ?naked ?choke\b/, 3],
   [/\barm ?bar\b/, 3],
-  [/\bvs\.?\s/, 2],
+  [/\bcomeback\b/, 2],
+  [/\bbrutal\b/, 2],
   [/\bround \d\b/, 2],
+  // "Silva vs Sonnen" and Bellator's "Silva v Sonnen" both name a matchup.
+  [/\bvs\.?[\s.]/, 3],
+  [/\s+v\.?\s+/, 3],
+  // Japanese: highlight, bout, "bout N", finish, full fight
+  [/ハイライト/, 5],
+  [/試合/, 3],
+  [/第\d+試合/, 2],
+  [/フィニッシュ/, 4],
+  [/全試合/, 3],
+  // Polish: fight, whole fight, knockout, recap
+  [/\bwalka\b/, 4],
+  [/\bca[łl]a walka\b/, 5],
+  [/\bnokaut\b/, 5],
+  [/\bskr[óo]t\b/, 4],
+  // Czech: bout, whole bout
+  [/\bz[áa]pas\b/, 4],
+  [/\bcel[ýy] z[áa]pas\b/, 5],
 ];
 
-/** Title phrases that mark everything that is not fighting. */
-const NEGATIVE = [
-  [/\bpress conference\b/, 10],
-  [/\bpresser\b/, 10],
-  [/\bweigh[- ]?ins?\b/, 10],
-  [/\bembedded\b/, 10],
-  [/\bvlog\b/, 10],
-  [/\bepisode \d+\b/, 6],
-  [/\bmedia day\b/, 10],
-  [/\bopen workouts?\b/, 10],
-  [/\bface ?offs?\b/, 8],
-  [/\bstare ?downs?\b/, 6],
-  [/\binterviews?\b/, 8],
-  [/\bpodcast\b/, 10],
-  [/\bpost[- ]fight show\b/, 8],
-  [/\bcountdown\b/, 7],
-  [/\bpreview\b/, 7],
-  [/\bpredictions?\b/, 8],
-  [/\bbreakdown\b/, 5],
-  [/\btrailer\b/, 7],
-  [/\bpromo\b/, 7],
-  [/\bceremonial\b/, 9],
-  [/\bofficial weigh\b/, 10],
-  [/\barrivals?\b/, 6],
-  [/\bbehind the scenes\b/, 6],
-  [/\bannouncement\b/, 6],
-  [/\bfull card\b/, 3],
-  [/\bhow to watch\b/, 8],
-  [/\blive stream\b/, 6],
-  [/\bwatch along\b/, 8],
-  [/\bcommentary\b/, 4],
-  [/\bmerch\b/, 8],
-  [/\bshorts?\b/, 2],
+/** Mild signals against - enough to break a tie, not enough to veto. */
+const SOFT_NEGATIVE = [
+  [/\bepisode \d+\b/, 2],
+  [/\bpreview\b/, 3],
+  [/\bbreakdown\b/, 3],
+  [/\bannouncement\b/, 3],
+  [/\blive stream\b/, 3],
+  [/\bcommentary\b/, 2],
+  [/\bpromo\b/, 3],
 ];
 
-/** Score a title; positive weights mean fight footage, negative mean talk. */
+/** Score a title. `hardStop` means it was vetoed outright. */
 export function scoreTitle(title) {
   const text = String(title ?? '').toLowerCase();
+  if (!text) return { score: 0, matched: [], hardStop: false };
+
+  if (HARD_NEGATIVE.some((pattern) => pattern.test(text))) {
+    return { score: 0, matched: [], hardStop: true };
+  }
+
   let score = 0;
   const matched = [];
 
@@ -81,18 +128,19 @@ export function scoreTitle(title) {
       matched.push(pattern.source);
     }
   }
-  for (const [pattern, weight] of NEGATIVE) {
+  for (const [pattern, weight] of SOFT_NEGATIVE) {
     if (pattern.test(text)) score -= weight;
   }
 
-  return { score, matched };
+  return { score, matched, hardStop: false };
 }
 
 const HIGHLIGHT_THRESHOLD = 3;
 
 /** True when the title looks like fight footage rather than promo content. */
 export function isHighlight(title) {
-  return scoreTitle(title).score >= HIGHLIGHT_THRESHOLD;
+  const { score, hardStop } = scoreTitle(title);
+  return !hardStop && score >= HIGHLIGHT_THRESHOLD;
 }
 
 /**

@@ -141,16 +141,30 @@ test('fetchText retries a 500 and then succeeds', async () => {
   assert.equal(calls, 2);
 });
 
-test('fetchText gives up immediately on a 404', async () => {
+test('fetchText retries a 404, which YouTube also returns when throttling', async () => {
+  // A burst of requests turned six live channels into 404s mid-crawl, so a
+  // 404 is treated as possibly transient rather than as a dead channel.
   let calls = 0;
   const fetchImpl = async () => {
     calls += 1;
-    return { ok: false, status: 404, text: async () => '' };
+    if (calls < 3) return { ok: false, status: 404, text: async () => '' };
+    return { ok: true, status: 200, text: async () => 'body' };
+  };
+
+  assert.equal(await fetchText('https://example.test/feed', { fetchImpl, attempts: 3 }), 'body');
+  assert.equal(calls, 3);
+});
+
+test('fetchText gives up immediately on a 403', async () => {
+  let calls = 0;
+  const fetchImpl = async () => {
+    calls += 1;
+    return { ok: false, status: 403, text: async () => '' };
   };
 
   await assert.rejects(
-    () => fetchText('https://example.test/missing', { fetchImpl, attempts: 3 }),
-    /HTTP 404/,
+    () => fetchText('https://example.test/denied', { fetchImpl, attempts: 3 }),
+    /HTTP 403/,
   );
-  assert.equal(calls, 1, 'a 404 will not fix itself, so it must not be retried');
+  assert.equal(calls, 1, 'a refusal will not fix itself, so it must not be retried');
 });

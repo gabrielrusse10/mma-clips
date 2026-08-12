@@ -35,10 +35,49 @@ test('rejects promo, talk and vlog content', () => {
   }
 });
 
-test('negative phrases outweigh an incidental positive word', () => {
-  // "Highlights" appears, but this is still a talk show.
+test('a hard negative vetoes even a strong positive', () => {
+  // "Highlights" appears, but these are still talk.
   assert.equal(isHighlight('Post-Fight Show: Highlights and Reaction'), false);
   assert.equal(isHighlight('Press Conference Highlights'), false);
+});
+
+// Titles taken verbatim from the promotions' feeds. These are the cases that
+// the first live crawl got wrong, so they are pinned here.
+const REAL_TITLES = [
+  ["Jaw-Dropping Highlights From Dana White's Contender Series Episode 1", true],
+  ['UFC 330 Embedded: Vlog Series - Episode 2', false],
+  ['Dana White Post-Fight Press Conference | DWCS Episode 1', false],
+  ['Dern vs Robertson face off! #ufc330', false],
+  ['UFC 330 fight week is here! #ufc330', false],
+  ['Tough Questions with Mackenzie Dern and Forrest Griffin | Toyo Tires', false],
+  ['King Mo v Satoshi Ishii (石井 慧), AND MORE! | Bellator 169 - Full Main Event', true],
+  ['INSANE KO! | Usman Nurmagomedov v Archie Colgan | Full Fight | PFL New York', true],
+  ['Pressure? What Pressure?! | Johnny Eblen Fight Compilation!', true],
+  ['How to escape a takedown with a backflip!', false],
+  ['Loughran VS Brookins Pt3', true],
+  ['【速報】クレベル・コイケ vs  秋元強真｜第10試合【RIZIN 54】', true],
+  ['クレベル・コイケvs.秋元強真　試合後インタビュー / RIZIN.54', false],
+  ['RIZIN.54 試合後インタビューまとめ3', false],
+  ['榊原信行CEO総括 / RIZIN.54', false],
+];
+
+test('classifies real titles from the live feeds', () => {
+  for (const [title, expected] of REAL_TITLES) {
+    assert.equal(isHighlight(title), expected, `${expected ? 'expected' : 'did not expect'}: ${title}`);
+  }
+});
+
+test('a mild word does not sink a clear highlight', () => {
+  // "Episode 1" is a soft negative; "Highlights" should still win.
+  assert.equal(isHighlight('Highlights From Contender Series Episode 1'), true);
+});
+
+test('reads fight words in the languages the promotions post in', () => {
+  assert.equal(isHighlight('第10試合【RIZIN 54】ハイライト'), true);
+  assert.equal(isHighlight('KSW 100: Cała walka'), true);
+  assert.equal(isHighlight('OKTAGON 92: Celý zápas'), true);
+  assert.equal(isHighlight('RIZIN.54 インタビュー'), false);
+  assert.equal(isHighlight('KSW 100 konferencja'), false);
 });
 
 test('scoreTitle reports which patterns fired', () => {

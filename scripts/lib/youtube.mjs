@@ -23,11 +23,12 @@ export async function fetchText(url, { attempts = 3, timeoutMs = 20_000, fetchIm
         headers: { 'user-agent': USER_AGENT, 'accept-language': 'en-US,en;q=0.9' },
       });
       if (!response.ok) {
-        // 4xx other than rate limiting will not fix itself on retry.
-        if (response.status < 500 && response.status !== 429) {
-          throw new Error(`HTTP ${response.status} for ${url}`);
-        }
-        throw Object.assign(new Error(`HTTP ${response.status} for ${url}`), { retryable: true });
+        // YouTube answers 404 for a feed when it is throttling the caller, not
+        // only when the channel is gone - a burst of requests turned six live
+        // channels into 404s mid-run. Retry those; a genuinely dead channel
+        // just fails a little slower.
+        const retryable = response.status >= 500 || response.status === 429 || response.status === 404;
+        throw Object.assign(new Error(`HTTP ${response.status} for ${url}`), { retryable });
       }
       return await response.text();
     } catch (error) {
