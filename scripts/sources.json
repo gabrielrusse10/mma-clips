@@ -4,6 +4,7 @@
     {
       "id": "ufc",
       "name": "UFC",
+      "channelId": "UCvgfXK4nTYKudb0rFR6noLA",
       "handle": "@UFC",
       "verify": "UFC",
       "accent": "#e11d2e",
@@ -39,14 +40,16 @@
     {
       "id": "cagewarriors",
       "name": "Cage Warriors",
+      "channelId": "UCykMiq3YAelH9NOzfZMLTjQ",
       "handle": "@CageWarriors",
-      "verify": "Cage Warriors",
+      "verify": "CageWarriors",
       "accent": "#8b5cf6",
       "enabled": true
     },
     {
       "id": "invicta",
       "name": "Invicta FC",
+      "channelId": "UCYsccWrD_6uRxWq3_L8ZWRA",
       "handle": "@InvictaFC",
       "verify": "Invicta",
       "accent": "#ec4899",
@@ -55,14 +58,16 @@
     {
       "id": "lfa",
       "name": "LFA",
+      "channelId": "UC9OzRODOzp0hTQ6ceTdnzOg",
       "handle": "@LFAfighting",
-      "verify": "LFA",
+      "verify": "Legacy",
       "accent": "#22c55e",
       "enabled": true
     },
     {
       "id": "ksw",
       "name": "KSW",
+      "channelId": "UCv_fwQqff6zEFDxfJh_03fg",
       "handle": "@KSWMMA",
       "verify": "KSW",
       "accent": "#f97316",
@@ -71,6 +76,7 @@
     {
       "id": "rizin",
       "name": "RIZIN",
+      "channelId": "UCZZ0UGjWsRdM8_5bsqtxYaQ",
       "handle": "@RIZINFF",
       "verify": "RIZIN",
       "accent": "#e879f9",
@@ -79,6 +85,7 @@
     {
       "id": "oktagon",
       "name": "OKTAGON",
+      "channelId": "UC-duLp910sOetXJr-KiWBcQ",
       "handle": "@OktagonMMA",
       "verify": "OKTAGON",
       "accent": "#38bdf8",

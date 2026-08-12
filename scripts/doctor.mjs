@@ -16,7 +16,7 @@ import { fileURLToPath } from 'node:url';
 
 import { parseChannelFeed, parseFeedTitle } from './lib/atom.mjs';
 import { fetchText, resolveChannelId } from './lib/youtube.mjs';
-import { isHighlight } from './lib/classify.mjs';
+import { isHighlight, scoreTitle } from './lib/classify.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const FEED_URL = 'https://www.youtube.com/feeds/videos.xml?channel_id=';
@@ -44,13 +44,18 @@ async function describe(label, handleOrId, verify) {
       highlights,
       ok,
       note: ok ? '' : `expected a title matching "${verify}"`,
+      titles: videos.map((v) => ({ title: v.title, score: scoreTitle(v.title).score })),
     };
   } catch (error) {
     return { label, handleOrId, channelId, ok: false, note: error.message };
   }
 }
 
-const extra = process.argv.slice(2);
+const args = process.argv.slice(2);
+// --titles prints every video title with its score, which is how you tune the
+// keyword weights in classify.mjs against what the channels really post.
+const showTitles = args.includes('--titles');
+const extra = args.filter((arg) => arg !== '--titles');
 const config = JSON.parse(await readFile(path.join(ROOT, 'scripts', 'sources.json'), 'utf8'));
 
 const jobs = extra.length
@@ -69,6 +74,16 @@ for (const row of rows) {
       `${String(row.highlights ?? 0).padStart(7)}  ${row.ok ? 'yes' : 'NO'}` +
       `${row.note ? `  <- ${row.note}` : ''}`,
   );
+}
+
+if (showTitles) {
+  for (const row of rows) {
+    if (!row.titles?.length) continue;
+    console.log(`\n--- ${row.label}: ${row.title} ---`);
+    for (const { title, score } of row.titles) {
+      console.log(`  ${isHighlight(title) ? 'KEEP' : 'drop'} ${String(score).padStart(3)}  ${title}`);
+    }
+  }
 }
 
 const bad = rows.filter((row) => !row.ok);
