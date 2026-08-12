@@ -1,10 +1,299 @@
 {
-  "updated": null,
+  "updated": "2026-08-12T02:44:22.551Z",
   "counts": {
-    "scanned": 0,
-    "published": 0,
-    "sources": 0
+    "scanned": 97,
+    "published": 21,
+    "sources": 5
   },
-  "promotions": [],
-  "items": []
+  "promotions": [
+    {
+      "id": "ufc",
+      "name": "UFC",
+      "accent": "#e11d2e"
+    },
+    {
+      "id": "one",
+      "name": "ONE Championship",
+      "accent": "#f0b323"
+    },
+    {
+      "id": "pfl",
+      "name": "PFL",
+      "accent": "#00a3e0"
+    },
+    {
+      "id": "bellator",
+      "name": "Bellator",
+      "accent": "#c8102e"
+    },
+    {
+      "id": "oktagon",
+      "name": "OKTAGON",
+      "accent": "#38bdf8"
+    }
+  ],
+  "items": [
+    {
+      "id": "R5Mp3SexJh4",
+      "title": "A Bantamweight BRAWL! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
+      "published": "2026-08-11T19:00:23.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i3.ytimg.com/vi/R5Mp3SexJh4/hqdefault.jpg",
+      "views": 836,
+      "score": 5,
+      "rank": 97.32
+    },
+    {
+      "id": "7HW-_kM5lEk",
+      "title": "TICHOTA vs. DAUD | FREE FIGHT | OKTAGON 92",
+      "published": "2026-08-11T14:00:07.000Z",
+      "source": "oktagon",
+      "sourceName": "OKTAGON",
+      "channel": "OKTAGON Deutschland",
+      "thumbnail": "https://i4.ytimg.com/vi/7HW-_kM5lEk/hqdefault.jpg",
+      "views": 2203,
+      "score": 7,
+      "rank": 92.7
+    },
+    {
+      "id": "-4phj5l7Plc",
+      "title": "SHE OUTSTRUCK A THREE-SPORT LEGEND 😱 Kana vs. Stamp | Kickboxing Full Fight",
+      "published": "2026-08-11T11:00:07.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i2.ytimg.com/vi/-4phj5l7Plc/hqdefault.jpg",
+      "views": 35562,
+      "score": 7,
+      "rank": 92.6
+    },
+    {
+      "id": "gkjcIfHSVYc",
+      "title": "INSANE KO! | Usman Nurmagomedov v Archie Colgan | Full Fight | PFL New York",
+      "published": "2026-08-10T14:00:28.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/gkjcIfHSVYc/hqdefault.jpg",
+      "views": 4862,
+      "score": 9,
+      "rank": 72.27
+    },
+    {
+      "id": "5uaqPrgGORA",
+      "title": "This Got INTENSE | Montana De La Rosa v Tatiana Postarnakova | Full Fight | PFL New York",
+      "published": "2026-08-10T16:00:07.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i2.ytimg.com/vi/5uaqPrgGORA/hqdefault.jpg",
+      "views": 5631,
+      "score": 5,
+      "rank": 65.86
+    },
+    {
+      "id": "VHppGLmSP_Y",
+      "title": "“King of the North” Is an ABSOLUTE UNIT 🏴󠁧󠁢󠁳󠁣󠁴󠁿🔥 Nico Carrillo vs. Luke Lessei | Full Fight",
+      "published": "2026-08-10T03:00:05.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i3.ytimg.com/vi/VHppGLmSP_Y/hqdefault.jpg",
+      "views": 31967,
+      "score": 7,
+      "rank": 65.47
+    },
+    {
+      "id": "-0Nf2xuFFqU",
+      "title": "HOŠEK vs. SCHWINDT | FREE FIGHT | OKTAGON 92",
+      "published": "2026-08-09T10:00:34.000Z",
+      "source": "oktagon",
+      "sourceName": "OKTAGON",
+      "channel": "OKTAGON Deutschland",
+      "thumbnail": "https://i2.ytimg.com/vi/-0Nf2xuFFqU/hqdefault.jpg",
+      "views": 8094,
+      "score": 7,
+      "rank": 56.68
+    },
+    {
+      "id": "csL3jX9efmQ",
+      "title": "\"CRAZY COMEBACK!\" | 100 Knockouts In PFL",
+      "published": "2026-08-08T08:47:55.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/csL3jX9efmQ/hqdefault.jpg",
+      "views": 12863,
+      "score": 7,
+      "rank": 51.5
+    },
+    {
+      "id": "kfy00YHn_X8",
+      "title": "The crowd was UPSET 😭 DOVLET YAGSHIMURADOV vs. SIMEON POWELL - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T04:10:15.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/kfy00YHn_X8/hqdefault.jpg",
+      "views": 12911,
+      "score": 7,
+      "rank": 50.69
+    },
+    {
+      "id": "lmStfWKphj4",
+      "title": "WHAT A WAR! | Lewis McGrillen (only just) GRILLS Brandon Lewis 🔥 - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T03:15:01.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i1.ytimg.com/vi/lmStfWKphj4/hqdefault.jpg",
+      "views": 38155,
+      "score": 6,
+      "rank": 50.41
+    },
+    {
+      "id": "sK94UG1JLxo",
+      "title": "THE BUTCHER is victorious! 🏆 | BRYAN BATTLE vs. DALTON ROSTA - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T04:46:34.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/sK94UG1JLxo/hqdefault.jpg",
+      "views": 8421,
+      "score": 7,
+      "rank": 50.05
+    },
+    {
+      "id": "oGOmwYTMf7I",
+      "title": "LIGHTS OUT! | Usman Nurmagomedov v Archie Colgan | Full Fight | PFL New York",
+      "published": "2026-08-08T14:00:06.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/oGOmwYTMf7I/hqdefault.jpg",
+      "views": 30015,
+      "score": 5,
+      "rank": 49.98
+    },
+    {
+      "id": "LZ_QIm_cB-A",
+      "title": "Main Card Highlights | PFL Charlotte",
+      "published": "2026-08-08T04:56:03.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i1.ytimg.com/vi/LZ_QIm_cB-A/hqdefault.jpg",
+      "views": 55068,
+      "score": 5,
+      "rank": 49.34
+    },
+    {
+      "id": "P29l0K-dorE",
+      "title": "MASSIVE ONE PUNCH KO back at UFC 22!",
+      "published": "2026-08-08T12:00:29.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC FIGHT PASS",
+      "thumbnail": "https://i1.ytimg.com/vi/P29l0K-dorE/hqdefault.jpg",
+      "views": 33787,
+      "score": 4,
+      "rank": 47.79
+    },
+    {
+      "id": "Vx32HUKBlA0",
+      "title": "UNANIMOUS DECISION! 😯Josh Silveira vs. Aaron Jeffery - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T03:38:07.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i3.ytimg.com/vi/Vx32HUKBlA0/hqdefault.jpg",
+      "views": 2256,
+      "score": 7,
+      "rank": 47.56
+    },
+    {
+      "id": "AJhL5WOmE9E",
+      "title": "SPLIT DECISION?! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
+      "published": "2026-08-08T16:00:38.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/AJhL5WOmE9E/hqdefault.jpg",
+      "views": 2657,
+      "score": 5,
+      "rank": 46.19
+    },
+    {
+      "id": "D95ZLdBITwE",
+      "title": "THEY DIDN'T HOLD BACK! | Aaron Jeffrey v Douglas Lima | Full Fight | Bellator San Diego",
+      "published": "2026-08-06T19:00:28.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i1.ytimg.com/vi/D95ZLdBITwE/hqdefault.jpg",
+      "views": 10932,
+      "score": 5,
+      "rank": 41.97
+    },
+    {
+      "id": "Wg-CyRSqx8k",
+      "title": "Archie Colgan's Top 3 Finishes In Bellator",
+      "published": "2026-07-29T21:00:25.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/Wg-CyRSqx8k/hqdefault.jpg",
+      "views": 4747,
+      "score": 7,
+      "rank": 35.73
+    },
+    {
+      "id": "oZKG3GPM6Bw",
+      "title": "When Legends COLLIDE! | Michael Chandler v Benson Henderson | Full Fight | Bellator 165",
+      "published": "2026-07-14T22:00:27.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/oZKG3GPM6Bw/hqdefault.jpg",
+      "views": 112625,
+      "score": 5,
+      "rank": 33.63
+    },
+    {
+      "id": "-GRHneaCKDA",
+      "title": "How To Make A STATEMENT! | Johnny Eblen v Impa Kasanganay | PFL Austin | Full Fight",
+      "published": "2026-07-27T16:00:23.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/-GRHneaCKDA/hqdefault.jpg",
+      "views": 7035,
+      "score": 5,
+      "rank": 31.47
+    },
+    {
+      "id": "vvU99yTvU6I",
+      "title": "Two Bellator Fighters CLASH! | Alexandr Shabliy v Alfie Davis II | Full Fight",
+      "published": "2026-07-08T21:00:30.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i3.ytimg.com/vi/vvU99yTvU6I/hqdefault.jpg",
+      "views": 9111,
+      "score": 5,
+      "rank": 28.68
+    }
+  ],
+  "problems": [
+    {
+      "source": "lfa",
+      "message": "could not resolve channel for @LFAfighting"
+    },
+    {
+      "source": "rizin",
+      "message": "could not resolve channel for @RIZINFF"
+    }
+  ]
 }
