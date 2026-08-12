@@ -37,6 +37,7 @@ const HARD_NEGATIVE = [
   /\bbehind the scenes\b/,
   /\btrailer\b/,
   /\bmerch\b/,
+  /\btrash ?talk\b/,
   // Japanese: interview, press conference, weigh-in, fly-on-the-wall, wrap-up
   /インタビュー/,
   /記者会見/,
@@ -80,9 +81,7 @@ const POSITIVE = [
   [/\bcomeback\b/, 2],
   [/\bbrutal\b/, 2],
   [/\bround \d\b/, 2],
-  // "Silva vs Sonnen" and Bellator's "Silva v Sonnen" both name a matchup.
   [/\bvs\.?[\s.]/, 3],
-  [/\s+v\.?\s+/, 3],
   // Japanese: highlight, bout, "bout N", finish, full fight
   [/ハイライト/, 5],
   [/試合/, 3],
@@ -110,9 +109,18 @@ const SOFT_NEGATIVE = [
   [/\bpromo\b/, 3],
 ];
 
+/**
+ * Bellator writes matchups as "Chandler v Henderson". Matching a bare "v"
+ * needs the opponent's capital letter, or it fires on ordinary prepositions -
+ * Czech "znovu v kleci" ("in the cage again") is not a fight video.
+ * Tested against the original title, since case is the whole signal.
+ */
+const MATCHUP = /\p{L}\s+v\.?\s+\p{Lu}/u;
+
 /** Score a title. `hardStop` means it was vetoed outright. */
 export function scoreTitle(title) {
-  const text = String(title ?? '').toLowerCase();
+  const raw = String(title ?? '');
+  const text = raw.toLowerCase();
   if (!text) return { score: 0, matched: [], hardStop: false };
 
   if (HARD_NEGATIVE.some((pattern) => pattern.test(text))) {
@@ -122,6 +130,10 @@ export function scoreTitle(title) {
   let score = 0;
   const matched = [];
 
+  if (MATCHUP.test(raw)) {
+    score += 3;
+    matched.push(MATCHUP.source);
+  }
   for (const [pattern, weight] of POSITIVE) {
     if (pattern.test(text)) {
       score += weight;

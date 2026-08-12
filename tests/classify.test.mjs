@@ -72,6 +72,20 @@ test('a mild word does not sink a clear highlight', () => {
   assert.equal(isHighlight('Highlights From Contender Series Episode 1'), true);
 });
 
+test('a bare "v" only counts between two names', () => {
+  assert.equal(isHighlight('Michael Chandler v Benson Henderson | Full Fight'), true);
+  assert.equal(isHighlight('Chandler v Henderson'), true);
+  // Czech for "when will we see Macha in the cage again?" - "v" is a
+  // preposition here, not a matchup.
+  assert.equal(isHighlight('Kdy uvidíme Macha znovu v kleci? 👀🔥'), false);
+  assert.equal(isHighlight('Back in the gym after surgery'), false);
+});
+
+test('trash talk is not a fight', () => {
+  assert.equal(isHighlight('🔥 Roušal vs. Magard trashtalk je tu!'), false);
+  assert.equal(isHighlight('Best trash talk moments'), false);
+});
+
 test('reads fight words in the languages the promotions post in', () => {
   assert.equal(isHighlight('第10試合【RIZIN 54】ハイライト'), true);
   assert.equal(isHighlight('KSW 100: Cała walka'), true);

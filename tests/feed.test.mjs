@@ -78,6 +78,50 @@ test('an empty crawl yields an empty list rather than an error', () => {
   assert.deepEqual(buildFeed([], NOW), []);
 });
 
+function published(id, overrides = {}) {
+  return {
+    id,
+    title: 'Fight Night Highlights',
+    published: '2026-08-11T00:00:00Z',
+    source: 'test',
+    sourceName: 'Test Promotion',
+    channel: 'Test Promotion',
+    thumbnail: '',
+    views: 1000,
+    score: 5,
+    rank: 50,
+    ...overrides,
+  };
+}
+
+test('carries already-published clips forward when a source fails', () => {
+  // A throttled run reached only one channel; yesterday's clips must survive.
+  const items = buildFeed([video({ videoId: 'newone11111' })], NOW, [
+    published('older1111111', { published: '2026-08-09T00:00:00Z' }),
+  ]);
+
+  assert.deepEqual(items.map((i) => i.id).sort(), ['newone11111', 'older1111111']);
+});
+
+test('a totally failed crawl leaves the feed standing', () => {
+  const previous = [published('older1111111'), published('older2222222')];
+  assert.equal(buildFeed([], NOW, previous).length, 2);
+});
+
+test('fresh data wins over the carried-forward copy of the same clip', () => {
+  const items = buildFeed([video({ videoId: 'aaaaaaaaaaa', views: 999_999 })], NOW, [
+    published('aaaaaaaaaaa', { views: 10 }),
+  ]);
+
+  assert.equal(items.length, 1);
+  assert.equal(items[0].views, 999_999);
+});
+
+test('carried-forward clips still age out of the window', () => {
+  const items = buildFeed([], NOW, [published('stale1111111', { published: '2026-05-01T00:00:00Z' })]);
+  assert.deepEqual(items, []);
+});
+
 const FEED = (channelTitle) => `<?xml version="1.0"?>
   <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015"
         xmlns:media="http://search.yahoo.com/mrss/"

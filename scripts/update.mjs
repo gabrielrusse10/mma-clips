@@ -78,19 +78,21 @@ async function collect(sources, cache) {
   return { videos, problems, resolved };
 }
 
-/** Filter to recent fight footage, drop duplicates, and rank. */
-export function buildFeed(videos, now = Date.now()) {
+/**
+ * Filter to recent fight footage, drop duplicates, and rank.
+ *
+ * `previous` carries the clips already on the site forward. Sources fail for
+ * reasons that have nothing to do with the clips already published - a
+ * throttled run once cut the feed from 25 clips to 5 - so the feed accumulates
+ * and ages out by date rather than being rebuilt from whatever this one run
+ * happened to reach.
+ */
+export function buildFeed(videos, now = Date.now(), previous = []) {
   const cutoff = now - MAX_AGE_DAYS * 86_400_000;
   const seen = new Set();
 
-  return videos
-    .filter((video) => Date.parse(video.published) >= cutoff)
+  const fresh = videos
     .filter((video) => isHighlight(video.title))
-    .filter((video) => {
-      if (seen.has(video.videoId)) return false;
-      seen.add(video.videoId);
-      return true;
-    })
     .map((video) => ({
       id: video.videoId,
       title: video.title,
@@ -101,8 +103,17 @@ export function buildFeed(videos, now = Date.now()) {
       thumbnail: video.thumbnail,
       views: video.views,
       score: scoreTitle(video.title).score,
-      rank: Math.round(rank(video, now) * 100) / 100,
-    }))
+    }));
+
+  // Fresh entries win on collision: their view counts are the current ones.
+  return [...fresh, ...previous]
+    .filter((item) => Date.parse(item.published) >= cutoff)
+    .filter((item) => {
+      if (seen.has(item.id)) return false;
+      seen.add(item.id);
+      return true;
+    })
+    .map((item) => ({ ...item, rank: Math.round(rank(item, now) * 100) / 100 }))
     .sort((a, b) => b.rank - a.rank)
     .slice(0, MAX_ITEMS);
 }
@@ -120,7 +131,8 @@ async function main() {
     throw new Error('every source failed - refusing to overwrite the data file with nothing');
   }
 
-  const items = buildFeed(videos);
+  const existing = await readJson(OUTPUT_FILE, { items: [] });
+  const items = buildFeed(videos, Date.now(), existing.items ?? []);
   const promotions = sources
     .filter((source) => items.some((item) => item.source === source.id))
     .map(({ id, name, accent }) => ({ id, name, accent }));
@@ -136,9 +148,10 @@ async function main() {
   await writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`);
   await writeFile(CACHE_FILE, `${JSON.stringify(resolved, null, 2)}\n`);
 
+  const added = items.filter((item) => !(existing.items ?? []).some((old) => old.id === item.id));
   console.log(
-    `\nScanned ${videos.length} videos -> kept ${items.length} highlights ` +
-      `across ${promotions.length} promotions.`,
+    `\nScanned ${videos.length} videos -> ${added.length} new, ` +
+      `${items.length} clips live across ${promotions.length} promotions.`,
   );
   if (problems.length > 0) console.log(`${problems.length} source(s) had problems (see data file).`);
 }

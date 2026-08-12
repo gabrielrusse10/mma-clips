@@ -1037,6 +1037,11 @@ body.is-locked {
     gap: 26px;
   }
 
+  .feature {
+    /* 16:9 leaves too little room for the headline on a narrow screen. */
+    min-height: 330px;
+  }
+
   .feature__body {
     padding: 18px;
   }
