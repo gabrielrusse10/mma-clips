@@ -33,12 +33,14 @@ jobs:
 
       - name: Commit refreshed highlights
         run: |
-          if git diff --quiet -- site/data/highlights.json scripts/channel-cache.json; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Stage first: the channel cache is untracked on the very first run,
+          # and git diff alone would not notice it.
+          git add site/data/highlights.json scripts/channel-cache.json
+          if git diff --cached --quiet; then
             echo "No change in the feed - nothing to commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data/highlights.json scripts/channel-cache.json
           git commit -m "Update highlights ($(date -u +%Y-%m-%d))"
           git push
