@@ -49,7 +49,7 @@ async function collect(sources, cache) {
     sources.map(async (source, index) => {
       // Stagger the requests. Firing ten at once got the runner throttled,
       // and YouTube expresses that as a 404 on a perfectly live channel.
-      await new Promise((resolve) => setTimeout(resolve, index * 400));
+      await new Promise((resolve) => setTimeout(resolve, index * 900));
 
       const channelId = source.channelId || cache[source.id] || (await resolveChannelId(source.handle));
       if (!channelId) throw new Error(`could not resolve channel for ${source.handle}`);

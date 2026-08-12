@@ -6,6 +6,11 @@ from the official YouTube channels of the major promotions and refreshed daily.
 No API keys, no npm dependencies, no build step. A Node script writes one JSON file; the page reads
 it.
 
+**The site:** a featured clip up top with an up-next rundown, then the rest grouped by how recent
+they are. Filter by promotion or to the last 48 hours, search, and sort by trending, newest or most
+viewed. Clips open in a player you can step through with the arrow keys, so you can watch one after
+another without going back to the grid. Press `/` to jump to search.
+
 ## Run it
 
 ```bash
@@ -57,23 +62,42 @@ Actions tab any time. Change the `cron:` line to move the time.
 ## How it works
 
 ```
-scripts/sources.json    the promotions to crawl
-scripts/update.mjs      crawl -> filter -> site/data/highlights.json
-scripts/lib/atom.mjs    parses YouTube's public Atom feeds
+scripts/sources.json     the promotions to crawl
+scripts/update.mjs       crawl -> filter -> site/data/highlights.json
+scripts/doctor.mjs       checks which channel each source really resolves to
+scripts/lib/atom.mjs     parses YouTube's public Atom feeds
 scripts/lib/classify.mjs decides what counts as a highlight
-site/                   the website (index.html, app.js, styles.css, data/)
+site/                    the website (index.html, app.js, styles.css, data/)
 ```
 
-Each promotion's handle is resolved to a channel id once and cached in `scripts/channel-cache.json`,
-then its public feed at `youtube.com/feeds/videos.xml` is read — the same feed an RSS reader would
-use. Official channels post far more talk than fighting, so titles are scored against keyword lists
-in `classify.mjs`: "Free Fight", "Best Knockouts" and "Fight Night Highlights" are kept, while
-"Embedded, Ep. 3", "Press Conference" and "Official Weigh-In" are dropped. Surviving clips from the
-last 45 days are ranked by a blend of recency, title confidence and view count.
+Each source names a channel id, and its public feed at `youtube.com/feeds/videos.xml` is read — the
+same feed an RSS reader would use. Official channels post far more talk than fighting, so titles are
+scored against keyword lists in `classify.mjs`: "Free Fight", "Best Knockouts" and "Full Main Event"
+are kept, while "Embedded, Ep. 3", "Press Conference" and "Official Weigh-In" are dropped. A hard
+negative vetoes outright, but a mild word only nudges — "Highlights From Contender Series Episode 1"
+survives its "Episode". RIZIN, KSW and OKTAGON do not post in English, so Japanese, Polish and Czech
+fight words carry their own weights. Surviving clips from the last 45 days are ranked by a blend of
+recency, title confidence and view count.
+
+Two failure modes are handled deliberately, both found by running this against the live feeds:
+
+- **Wrong channel.** Handles get reassigned when promotions are bought or rebranded — `@BellatorMMA`
+  now serves PFL's channel. Every source carries a `verify` string checked against the feed's real
+  channel title, and a mismatch drops the source rather than badging PFL clips as Bellator.
+- **Throttling.** Hammering YouTube gets the caller rate-limited, reported as 404s and 500s on
+  perfectly live channels. Requests are staggered and retried with backoff.
 
 A channel that fails is logged and skipped — one dead feed does not sink the run. If *every* source
 fails, the script exits non-zero and leaves the existing data file alone rather than blanking the
-site.
+site. Failures are also recorded in the data file under `problems`.
+
+### When a source stops working
+
+```bash
+npm run doctor                      # what channel does each source resolve to?
+npm run doctor -- --titles          # every video title with its classifier score
+npm run doctor -- @KSW @KSWMMA      # probe candidate handles to find the right one
+```
 
 ### Changing what gets crawled
 
@@ -97,7 +121,7 @@ behaviour — add a title to the list there when you tune it.
 npm test
 ```
 
-22 tests, all offline against a fixture feed in `tests/fixtures/`: feed parsing (CDATA, entities,
+32 tests, all offline against a fixture feed in `tests/fixtures/`: feed parsing (CDATA, entities,
 malformed entries), the highlight classifier, the 45-day cutoff, deduplication, ranking order, and
 the fetch retry policy.
 

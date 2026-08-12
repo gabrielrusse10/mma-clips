@@ -11,7 +11,7 @@ const USER_AGENT =
 const FEED_URL = 'https://www.youtube.com/feeds/videos.xml?channel_id=';
 
 /** GET with a timeout and a couple of retries for transient network faults. */
-export async function fetchText(url, { attempts = 3, timeoutMs = 20_000, fetchImpl = fetch } = {}) {
+export async function fetchText(url, { attempts = 4, timeoutMs = 20_000, fetchImpl = fetch } = {}) {
   let lastError;
 
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
@@ -35,7 +35,9 @@ export async function fetchText(url, { attempts = 3, timeoutMs = 20_000, fetchIm
       lastError = error;
       const retryable = error.retryable || error.name === 'AbortError' || error.name === 'TypeError';
       if (!retryable || attempt === attempts) break;
-      await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 500));
+      // Back off generously: throttling clears in seconds, and the crawl has
+      // no deadline worth rushing for.
+      await new Promise((resolve) => setTimeout(resolve, 2 ** attempt * 1000));
     } finally {
       clearTimeout(timer);
     }
