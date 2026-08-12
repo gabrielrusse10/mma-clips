@@ -1,0 +1,44 @@
+name: Update highlights
+
+# Refreshes site/data/highlights.json once a day and commits it when it changed.
+# There is no deploy step - the site is run locally (see README).
+on:
+  schedule:
+    # 13:00 UTC daily: late enough that weekend events have been cut and posted.
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-highlights
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Run tests
+        run: npm test
+
+      - name: Crawl the promotion channels
+        run: npm run update
+
+      - name: Commit refreshed highlights
+        run: |
+          if git diff --quiet -- site/data/highlights.json scripts/channel-cache.json; then
+            echo "No change in the feed - nothing to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/highlights.json scripts/channel-cache.json
+          git commit -m "Update highlights ($(date -u +%Y-%m-%d))"
+          git push

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+      xmlns:media="http://search.yahoo.com/mrss/"
+      xmlns="http://www.w3.org/2005/Atom">
+  <link rel="alternate" href="https://www.youtube.com/channel/UCtestchannelid00000"/>
+  <id>yt:channel:UCtestchannelid00000</id>
+  <yt:channelId>UCtestchannelid00000</yt:channelId>
+  <title>Test Promotion</title>
+  <published>2010-01-01T00:00:00+00:00</published>
+
+  <entry>
+    <id>yt:video:aaaaaaaaaaa</id>
+    <yt:videoId>aaaaaaaaaaa</yt:videoId>
+    <yt:channelId>UCtestchannelid00000</yt:channelId>
+    <title>Free Fight: Jones vs Gustafsson 2 | Full Fight Highlights</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=aaaaaaaaaaa"/>
+    <author>
+      <name>Test Promotion</name>
+      <uri>https://www.youtube.com/channel/UCtestchannelid00000</uri>
+    </author>
+    <published>2026-08-10T18:00:00+00:00</published>
+    <updated>2026-08-10T19:00:00+00:00</updated>
+    <media:group>
+      <media:title>Free Fight: Jones vs Gustafsson 2 | Full Fight Highlights</media:title>
+      <media:thumbnail url="https://i.ytimg.com/vi/aaaaaaaaaaa/hqdefault.jpg" width="480" height="360"/>
+      <media:description>A rematch for the ages &amp; one of the best ever.</media:description>
+      <media:community>
+        <media:statistics views="1250000"/>
+      </media:community>
+    </media:group>
+  </entry>
+
+  <entry>
+    <id>yt:video:bbbbbbbbbbb</id>
+    <yt:videoId>bbbbbbbbbbb</yt:videoId>
+    <yt:channelId>UCtestchannelid00000</yt:channelId>
+    <title>Test 300 Embedded, Ep. 3 | Fight Week Vlog Series</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=bbbbbbbbbbb"/>
+    <author>
+      <name>Test Promotion</name>
+      <uri>https://www.youtube.com/channel/UCtestchannelid00000</uri>
+    </author>
+    <published>2026-08-09T12:00:00+00:00</published>
+    <updated>2026-08-09T12:30:00+00:00</updated>
+    <media:group>
+      <media:title>Test 300 Embedded, Ep. 3 | Fight Week Vlog Series</media:title>
+      <media:thumbnail url="https://i.ytimg.com/vi/bbbbbbbbbbb/hqdefault.jpg" width="480" height="360"/>
+      <media:description>Behind the scenes.</media:description>
+      <media:community>
+        <media:statistics views="400000"/>
+      </media:community>
+    </media:group>
+  </entry>
+
+  <entry>
+    <id>yt:video:ccccccccccc</id>
+    <yt:videoId>ccccccccccc</yt:videoId>
+    <yt:channelId>UCtestchannelid00000</yt:channelId>
+    <title><![CDATA[Best Knockouts of 2026 So Far — "Brutal" Finishes]]></title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=ccccccccccc"/>
+    <author>
+      <name>Test Promotion</name>
+      <uri>https://www.youtube.com/channel/UCtestchannelid00000</uri>
+    </author>
+    <published>2026-08-11T09:30:00+00:00</published>
+    <updated>2026-08-11T09:45:00+00:00</updated>
+    <media:group>
+      <media:title><![CDATA[Best Knockouts of 2026 So Far — "Brutal" Finishes]]></media:title>
+      <media:thumbnail url="https://i.ytimg.com/vi/ccccccccccc/hqdefault.jpg" width="480" height="360"/>
+      <media:description>Every finish.</media:description>
+      <media:community>
+        <media:statistics views="88000"/>
+      </media:community>
+    </media:group>
+  </entry>
+
+  <entry>
+    <id>yt:video:ddddddddddd</id>
+    <yt:videoId>ddddddddddd</yt:videoId>
+    <yt:channelId>UCtestchannelid00000</yt:channelId>
+    <title>Test 299 Official Weigh-In &amp; Ceremonial Face Offs</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=ddddddddddd"/>
+    <author>
+      <name>Test Promotion</name>
+      <uri>https://www.youtube.com/channel/UCtestchannelid00000</uri>
+    </author>
+    <published>2026-08-08T22:00:00+00:00</published>
+    <updated>2026-08-08T22:10:00+00:00</updated>
+    <media:group>
+      <media:title>Test 299 Official Weigh-In &amp; Ceremonial Face Offs</media:title>
+      <media:thumbnail url="https://i.ytimg.com/vi/ddddddddddd/hqdefault.jpg" width="480" height="360"/>
+      <media:description>Everyone made weight.</media:description>
+      <media:community>
+        <media:statistics views="210000"/>
+      </media:community>
+    </media:group>
+  </entry>
+
+  <entry>
+    <id>yt:video:eeeeeeeeeee</id>
+    <yt:videoId>eeeeeeeeeee</yt:videoId>
+    <yt:channelId>UCtestchannelid00000</yt:channelId>
+    <title>Malformed entry with no published date</title>
+    <link rel="alternate" href="https://www.youtube.com/watch?v=eeeeeeeeeee"/>
+    <media:group>
+      <media:title>Malformed entry with no published date</media:title>
+    </media:group>
+  </entry>
+</feed>

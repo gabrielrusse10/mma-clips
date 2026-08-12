@@ -1,0 +1,75 @@
+{
+  "$comment": "Sources for the daily highlight crawl. Each entry is an official promotion channel on YouTube. 'handle' is used to resolve the channel id at runtime (results are cached in channel-cache.json). 'channelId' is an optional hint that skips resolution. Add or remove promotions freely - the site adapts to whatever is listed here.",
+  "sources": [
+    {
+      "id": "ufc",
+      "name": "UFC",
+      "handle": "@UFC",
+      "accent": "#e11d2e",
+      "enabled": true
+    },
+    {
+      "id": "one",
+      "name": "ONE Championship",
+      "handle": "@ONEChampionship",
+      "accent": "#f0b323",
+      "enabled": true
+    },
+    {
+      "id": "pfl",
+      "name": "PFL",
+      "handle": "@PFLMMA",
+      "accent": "#00a3e0",
+      "enabled": true
+    },
+    {
+      "id": "bellator",
+      "name": "Bellator",
+      "handle": "@BellatorMMA",
+      "accent": "#c8102e",
+      "enabled": true
+    },
+    {
+      "id": "cagewarriors",
+      "name": "Cage Warriors",
+      "handle": "@CageWarriors",
+      "accent": "#8b5cf6",
+      "enabled": true
+    },
+    {
+      "id": "invicta",
+      "name": "Invicta FC",
+      "handle": "@InvictaFC",
+      "accent": "#ec4899",
+      "enabled": true
+    },
+    {
+      "id": "lfa",
+      "name": "LFA",
+      "handle": "@LFAfighting",
+      "accent": "#22c55e",
+      "enabled": true
+    },
+    {
+      "id": "ksw",
+      "name": "KSW",
+      "handle": "@KSWMMA",
+      "accent": "#f97316",
+      "enabled": true
+    },
+    {
+      "id": "rizin",
+      "name": "RIZIN",
+      "handle": "@RIZINFF",
+      "accent": "#e879f9",
+      "enabled": true
+    },
+    {
+      "id": "oktagon",
+      "name": "OKTAGON",
+      "handle": "@OktagonMMA",
+      "accent": "#38bdf8",
+      "enabled": true
+    }
+  ]
+}
