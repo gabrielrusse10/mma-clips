@@ -49,8 +49,11 @@ async function collect(sources, cache) {
     sources.map(async (source) => {
       const channelId = source.channelId || cache[source.id] || (await resolveChannelId(source.handle));
       if (!channelId) throw new Error(`could not resolve channel for ${source.handle}`);
+
+      const result = await fetchChannelVideos(source, channelId);
+      // Only cache an id that survived verification.
       resolved[source.id] = channelId;
-      return { source, videos: await fetchChannelVideos(source, channelId) };
+      return result;
     }),
   );
 
@@ -58,7 +61,10 @@ async function collect(sources, cache) {
     const source = sources[index];
     if (result.status === 'fulfilled') {
       videos.push(...result.value.videos);
-      console.log(`  ${source.name.padEnd(20)} ${String(result.value.videos.length).padStart(3)} videos`);
+      console.log(
+        `  ${source.name.padEnd(20)} ${String(result.value.videos.length).padStart(3)} videos` +
+          `  (${result.value.channelTitle})`,
+      );
     } else {
       problems.push({ source: source.id, message: result.reason?.message ?? String(result.reason) });
       console.warn(`  ${source.name.padEnd(20)} FAILED - ${result.reason?.message ?? result.reason}`);

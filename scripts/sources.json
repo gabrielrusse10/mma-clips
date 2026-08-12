@@ -1,31 +1,38 @@
 {
-  "$comment": "Sources for the daily highlight crawl. Each entry is an official promotion channel on YouTube. 'handle' is used to resolve the channel id at runtime (results are cached in channel-cache.json). 'channelId' is an optional hint that skips resolution. Add or remove promotions freely - the site adapts to whatever is listed here.",
+  "$comment": "Sources for the daily crawl. 'channelId' pins the exact channel (preferred - handles get reassigned when promotions are bought or rebranded). 'handle' is the fallback used when no id is pinned. 'verify' must appear in the channel's real title; a mismatch drops the source rather than mislabelling its clips. Run `npm run doctor` after editing.",
   "sources": [
     {
       "id": "ufc",
       "name": "UFC",
       "handle": "@UFC",
+      "verify": "UFC",
       "accent": "#e11d2e",
       "enabled": true
     },
     {
       "id": "one",
       "name": "ONE Championship",
+      "channelId": "UCiormkBf3jm6mfb7k0yPbKA",
       "handle": "@ONEChampionship",
+      "verify": "ONE",
       "accent": "#f0b323",
       "enabled": true
     },
     {
       "id": "pfl",
       "name": "PFL",
+      "channelId": "UCPrONRG9hO1f-OrxW-WH-xg",
       "handle": "@PFLMMA",
+      "verify": "PFL",
       "accent": "#00a3e0",
       "enabled": true
     },
     {
       "id": "bellator",
       "name": "Bellator",
+      "channelId": "UCnkMTsKYqhHm6l6GQzg4szg",
       "handle": "@BellatorMMA",
+      "verify": "Bellator",
       "accent": "#c8102e",
       "enabled": true
     },
@@ -33,6 +40,7 @@
       "id": "cagewarriors",
       "name": "Cage Warriors",
       "handle": "@CageWarriors",
+      "verify": "Cage Warriors",
       "accent": "#8b5cf6",
       "enabled": true
     },
@@ -40,6 +48,7 @@
       "id": "invicta",
       "name": "Invicta FC",
       "handle": "@InvictaFC",
+      "verify": "Invicta",
       "accent": "#ec4899",
       "enabled": true
     },
@@ -47,6 +56,7 @@
       "id": "lfa",
       "name": "LFA",
       "handle": "@LFAfighting",
+      "verify": "LFA",
       "accent": "#22c55e",
       "enabled": true
     },
@@ -54,6 +64,7 @@
       "id": "ksw",
       "name": "KSW",
       "handle": "@KSWMMA",
+      "verify": "KSW",
       "accent": "#f97316",
       "enabled": true
     },
@@ -61,6 +72,7 @@
       "id": "rizin",
       "name": "RIZIN",
       "handle": "@RIZINFF",
+      "verify": "RIZIN",
       "accent": "#e879f9",
       "enabled": true
     },
@@ -68,6 +80,7 @@
       "id": "oktagon",
       "name": "OKTAGON",
       "handle": "@OktagonMMA",
+      "verify": "OKTAGON",
       "accent": "#38bdf8",
       "enabled": true
     }

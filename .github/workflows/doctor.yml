@@ -1,0 +1,29 @@
+name: Check sources
+
+# Reports which channel each source actually resolves to. Run it after editing
+# scripts/sources.json, or pass candidate handles to find the right one for a
+# promotion whose handle changed.
+on:
+  workflow_dispatch:
+    inputs:
+      handles:
+        description: "Optional space-separated handles or channel ids to probe instead of sources.json"
+        required: false
+        default: ""
+
+jobs:
+  doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Check sources
+        # Passed as an environment variable rather than interpolated into the
+        # run block, so the input cannot be used to inject shell commands.
+        env:
+          HANDLES: ${{ inputs.handles }}
+        run: node scripts/doctor.mjs $HANDLES

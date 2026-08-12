@@ -3,7 +3,7 @@
  * channel's public Atom feed. No API key and no third-party dependencies.
  */
 
-import { extractChannelId, parseChannelFeed } from './atom.mjs';
+import { extractChannelId, parseChannelFeed, parseFeedTitle } from './atom.mjs';
 
 const USER_AGENT =
   'mma-clips/1.0 (+https://github.com/gabrielrusse10/mma-clips) static-site-generator';
@@ -66,12 +66,29 @@ export async function resolveChannelId(handle, options = {}) {
   return '';
 }
 
-/** Read one channel's feed and tag every video with its promotion. */
+/**
+ * Read one channel's feed and tag every video with its promotion.
+ *
+ * `source.verify` guards against landing on the wrong channel: promotions get
+ * bought, rebranded and merged, and handles follow them. Labelling PFL's clips
+ * as Bellator is worse than dropping the source, so a title mismatch throws.
+ */
 export async function fetchChannelVideos(source, channelId, options = {}) {
   const xml = await fetchText(FEED_URL + channelId, options);
-  return parseChannelFeed(xml).map((video) => ({
-    ...video,
-    sourceId: source.id,
-    sourceName: source.name,
-  }));
+  const channelTitle = parseFeedTitle(xml);
+
+  if (source.verify && !channelTitle.toLowerCase().includes(source.verify.toLowerCase())) {
+    throw new Error(
+      `${channelId} is "${channelTitle}", expected a channel matching "${source.verify}"`,
+    );
+  }
+
+  return {
+    channelTitle,
+    videos: parseChannelFeed(xml).map((video) => ({
+      ...video,
+      sourceId: source.id,
+      sourceName: source.name,
+    })),
+  };
 }

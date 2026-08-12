@@ -97,17 +97,31 @@ export function parseChannelFeed(xml) {
     .filter(Boolean);
 }
 
-/** Pull the canonical channel id out of a YouTube channel page. */
+/**
+ * Pull the channel id belonging to a YouTube channel page.
+ *
+ * Order matters. A channel page also mentions the ids of recommended and
+ * related channels, so the bare `"channelId"` key is not trustworthy - taking
+ * the first match there is how you end up crawling somebody else's channel.
+ * Only the canonical link and `externalId` describe the page's own owner.
+ */
 export function extractChannelId(html) {
   if (typeof html !== 'string') return '';
   const patterns = [
-    /"channelId"\s*:\s*"(UC[\w-]{20,})"/,
+    /<link[^>]+rel="canonical"[^>]+href="https:\/\/www\.youtube\.com\/channel\/(UC[\w-]{20,})"/,
+    /<meta[^>]+itemprop="identifier"[^>]+content="(UC[\w-]{20,})"/,
     /"externalId"\s*:\s*"(UC[\w-]{20,})"/,
-    /channel\/(UC[\w-]{20,})/,
   ];
   for (const pattern of patterns) {
     const match = pattern.exec(html);
     if (match) return match[1];
   }
   return '';
+}
+
+/** Channel title from a feed document (the feed-level title, not an entry). */
+export function parseFeedTitle(xml) {
+  if (typeof xml !== 'string') return '';
+  // Strip entries first so this cannot pick up an entry's own <title>.
+  return tagText(xml.replace(/<entry[\s\S]*/, ''), 'title');
 }

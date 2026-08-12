@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import { buildFeed } from '../scripts/update.mjs';
-import { fetchText } from '../scripts/lib/youtube.mjs';
+import { fetchChannelVideos, fetchText } from '../scripts/lib/youtube.mjs';
 
 const NOW = Date.parse('2026-08-12T00:00:00Z');
 
@@ -76,6 +76,56 @@ test('emits exactly the fields the page reads', () => {
 
 test('an empty crawl yields an empty list rather than an error', () => {
   assert.deepEqual(buildFeed([], NOW), []);
+});
+
+const FEED = (channelTitle) => `<?xml version="1.0"?>
+  <feed xmlns:yt="http://www.youtube.com/xml/schemas/2015"
+        xmlns:media="http://search.yahoo.com/mrss/"
+        xmlns="http://www.w3.org/2005/Atom">
+    <title>${channelTitle}</title>
+    <entry>
+      <yt:videoId>aaaaaaaaaaa</yt:videoId>
+      <title>Fight Night Highlights</title>
+      <published>2026-08-11T00:00:00+00:00</published>
+    </entry>
+  </feed>`;
+
+const feedFetcher = (channelTitle) => async () => ({
+  ok: true,
+  status: 200,
+  text: async () => FEED(channelTitle),
+});
+
+test('accepts a channel whose title matches the expected promotion', async () => {
+  const source = { id: 'pfl', name: 'PFL', verify: 'PFL' };
+  const result = await fetchChannelVideos(source, 'UCxxxxxxxxxxxxxxxxxxxxxx', {
+    fetchImpl: feedFetcher('PFL MMA'),
+  });
+
+  assert.equal(result.channelTitle, 'PFL MMA');
+  assert.equal(result.videos.length, 1);
+  assert.equal(result.videos[0].sourceName, 'PFL');
+});
+
+test('rejects a channel that belongs to a different promotion', async () => {
+  // The real failure this guards: @BellatorMMA now serves PFL's channel, which
+  // would have published PFL clips under a Bellator badge.
+  const source = { id: 'bellator', name: 'Bellator', verify: 'Bellator' };
+
+  await assert.rejects(
+    () =>
+      fetchChannelVideos(source, 'UCxxxxxxxxxxxxxxxxxxxxxx', {
+        fetchImpl: feedFetcher('PFL MMA'),
+      }),
+    /expected a channel matching "Bellator"/,
+  );
+});
+
+test('a source without a verify string accepts whatever it resolves to', async () => {
+  const result = await fetchChannelVideos({ id: 'x', name: 'X' }, 'UCxxxxxxxxxxxxxxxxxxxxxx', {
+    fetchImpl: feedFetcher('Anything At All'),
+  });
+  assert.equal(result.videos.length, 1);
 });
 
 test('fetchText retries a 500 and then succeeds', async () => {
