@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-12T16:13:24.064Z",
+  "updated": "2026-08-13T16:13:51.768Z",
   "counts": {
     "scanned": 123,
-    "published": 41,
+    "published": 46,
     "sources": 6
   },
   "promotions": [
@@ -39,16 +39,76 @@
   ],
   "items": [
     {
-      "id": "adhNQxwW9Eo",
-      "title": "BEST FINISHES FROM UFC 330 FIGHTERS 🔥",
-      "published": "2026-08-12T13:45:10.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i2.ytimg.com/vi/adhNQxwW9Eo/hqdefault.jpg",
-      "views": 3448,
-      "score": 4,
-      "rank": 112.82
+      "id": "xtHujrBMGYs",
+      "title": "PUSHED TO THE ABSOLUTE LIMIT 😱 Stella Hemetsberger vs. Jackie Buntan II | Kickboxing Full Fight",
+      "published": "2026-08-13T03:00:35.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i1.ytimg.com/vi/xtHujrBMGYs/hqdefault.jpg",
+      "views": 35355,
+      "score": 8,
+      "rank": 98.67
+    },
+    {
+      "id": "Woh5bS8sP04",
+      "title": "BRUTAL FINISH! | Amru Magomedov v Angel Alvarez | Full Fight | PFL New York",
+      "published": "2026-08-12T19:00:22.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/Woh5bS8sP04/hqdefault.jpg",
+      "views": 11543,
+      "score": 14,
+      "rank": 97.32
+    },
+    {
+      "id": "SKISFeQnFNU",
+      "title": "Feel that IMPACT💥 Nico Carrillo makes his kickboxing debut vs. Zhou Jiaqiang at ONE Fight Night 46!",
+      "published": "2026-08-13T03:00:01.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/SKISFeQnFNU/hqdefault.jpg",
+      "views": 31713,
+      "score": 3,
+      "rank": 88.47
+    },
+    {
+      "id": "qshT-RzXMrg",
+      "title": "ABSOLUTE WAR! | Omar El Dafrawy v Jonathan Piersma | Full Fight | PFL New York",
+      "published": "2026-08-12T22:00:16.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i2.ytimg.com/vi/qshT-RzXMrg/hqdefault.jpg",
+      "views": 3734,
+      "score": 8,
+      "rank": 87.13
+    },
+    {
+      "id": "OM4ZfMAEQoI",
+      "title": "Hokit In Action! | Josh Hokit v Spencer Smith | Full Fight",
+      "published": "2026-08-12T19:00:17.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/OM4ZfMAEQoI/hqdefault.jpg",
+      "views": 2382,
+      "score": 8,
+      "rank": 82.57
+    },
+    {
+      "id": "s5K0HJf7NpY",
+      "title": "“King of the North” SHOCKED a Muay Thai Legend 🤯 Nico Carrillo vs. Nong-O | Muay Thai Full Fight",
+      "published": "2026-08-12T03:00:07.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/s5K0HJf7NpY/hqdefault.jpg",
+      "views": 66455,
+      "score": 8,
+      "rank": 74.49
     },
     {
       "id": "FyNq6LVVLDo",
@@ -60,43 +120,19 @@
       "thumbnail": "https://i3.ytimg.com/vi/FyNq6LVVLDo/hqdefault.jpg",
       "views": 8529,
       "score": 8,
-      "rank": 103.98
+      "rank": 73.66
     },
     {
-      "id": "s5K0HJf7NpY",
-      "title": "“King of the North” SHOCKED a Muay Thai Legend 🤯 Nico Carrillo vs. Nong-O | Muay Thai Full Fight",
-      "published": "2026-08-12T03:00:07.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/s5K0HJf7NpY/hqdefault.jpg",
-      "views": 42580,
-      "score": 8,
-      "rank": 99
-    },
-    {
-      "id": "KYBiKYo7x0E",
-      "title": "Paid back with interest 👊💥 Can Nico Carrillo finish Zhou Jiaqiang at ONE Fight Night 46?",
-      "published": "2026-08-12T03:00:28.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/KYBiKYo7x0E/hqdefault.jpg",
-      "views": 186442,
-      "score": 4,
-      "rank": 93.57
-    },
-    {
-      "id": "uM7zdoi4Avc",
-      "title": "Jaw-Dropping Highlights From Dana White's Contender Series Episode 1",
-      "published": "2026-08-12T01:41:03.000Z",
+      "id": "adhNQxwW9Eo",
+      "title": "BEST FINISHES FROM UFC 330 FIGHTERS 🔥",
+      "published": "2026-08-12T13:45:10.000Z",
       "source": "ufc",
       "sourceName": "UFC",
       "channel": "UFC",
-      "thumbnail": "https://i2.ytimg.com/vi/uM7zdoi4Avc/hqdefault.jpg",
-      "views": 145049,
-      "score": 3,
-      "rank": 88.92
+      "thumbnail": "https://i2.ytimg.com/vi/adhNQxwW9Eo/hqdefault.jpg",
+      "views": 27065,
+      "score": 4,
+      "rank": 73.27
     },
     {
       "id": "XXanTVuVEbk",
@@ -106,21 +142,21 @@
       "sourceName": "RIZIN",
       "channel": "RIZIN FIGHTING FEDERATION",
       "thumbnail": "https://i1.ytimg.com/vi/XXanTVuVEbk/hqdefault.jpg",
-      "views": 488799,
+      "views": 557722,
       "score": 8,
-      "rank": 83.27
+      "rank": 69.79
     },
     {
-      "id": "R5Mp3SexJh4",
-      "title": "A Bantamweight BRAWL! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
-      "published": "2026-08-11T19:00:23.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i3.ytimg.com/vi/R5Mp3SexJh4/hqdefault.jpg",
-      "views": 2346,
-      "score": 8,
-      "rank": 82.56
+      "id": "KYBiKYo7x0E",
+      "title": "Paid back with interest 👊💥 Can Nico Carrillo finish Zhou Jiaqiang at ONE Fight Night 46?",
+      "published": "2026-08-12T03:00:28.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/KYBiKYo7x0E/hqdefault.jpg",
+      "views": 394404,
+      "score": 4,
+      "rank": 69.58
     },
     {
       "id": "JcW1B3ACwU4",
@@ -132,7 +168,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/JcW1B3ACwU4/hqdefault.jpg",
       "views": 304207,
       "score": 8,
-      "rank": 81.17
+      "rank": 68.11
     },
     {
       "id": "-4phj5l7Plc",
@@ -144,7 +180,7 @@
       "thumbnail": "https://i2.ytimg.com/vi/-4phj5l7Plc/hqdefault.jpg",
       "views": 79104,
       "score": 8,
-      "rank": 80.69
+      "rank": 66.67
     },
     {
       "id": "J4QDgUoO6KE",
@@ -156,19 +192,31 @@
       "thumbnail": "https://i3.ytimg.com/vi/J4QDgUoO6KE/hqdefault.jpg",
       "views": 61019,
       "score": 8,
-      "rank": 78.69
+      "rank": 65.47
     },
     {
-      "id": "0EAtEsp_rsI",
-      "title": "#クレベルコイケ vs  #秋元強真 #RIZIN54",
-      "published": "2026-08-11T10:07:03.000Z",
-      "source": "rizin",
-      "sourceName": "RIZIN",
-      "channel": "RIZIN FIGHTING FEDERATION",
-      "thumbnail": "https://i1.ytimg.com/vi/0EAtEsp_rsI/hqdefault.jpg",
-      "views": 526841,
+      "id": "uM7zdoi4Avc",
+      "title": "Jaw-Dropping Highlights From Dana White's Contender Series Episode 1",
+      "published": "2026-08-12T01:41:03.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i2.ytimg.com/vi/uM7zdoi4Avc/hqdefault.jpg",
+      "views": 145049,
       "score": 3,
-      "rank": 73.24
+      "rank": 65.02
+    },
+    {
+      "id": "R5Mp3SexJh4",
+      "title": "A Bantamweight BRAWL! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
+      "published": "2026-08-11T19:00:23.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i3.ytimg.com/vi/R5Mp3SexJh4/hqdefault.jpg",
+      "views": 3162,
+      "score": 8,
+      "rank": 64.67
     },
     {
       "id": "gkjcIfHSVYc",
@@ -178,9 +226,21 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/gkjcIfHSVYc/hqdefault.jpg",
-      "views": 5562,
+      "views": 6592,
       "score": 12,
-      "rank": 71.32
+      "rank": 63.71
+    },
+    {
+      "id": "0EAtEsp_rsI",
+      "title": "#クレベルコイケ vs  #秋元強真 #RIZIN54",
+      "published": "2026-08-11T10:07:03.000Z",
+      "source": "rizin",
+      "sourceName": "RIZIN",
+      "channel": "RIZIN FIGHTING FEDERATION",
+      "thumbnail": "https://i1.ytimg.com/vi/0EAtEsp_rsI/hqdefault.jpg",
+      "views": 605120,
+      "score": 3,
+      "rank": 59.85
     },
     {
       "id": "R8ySACsjIqM",
@@ -192,7 +252,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/R8ySACsjIqM/hqdefault.jpg",
       "views": 190610,
       "score": 3,
-      "rank": 70.75
+      "rank": 57.49
     },
     {
       "id": "5uaqPrgGORA",
@@ -202,21 +262,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i2.ytimg.com/vi/5uaqPrgGORA/hqdefault.jpg",
-      "views": 6775,
+      "views": 7793,
       "score": 8,
-      "rank": 64.56
-    },
-    {
-      "id": "o8lwZ6lGMQM",
-      "title": "FIRED UP ❤️‍🔥 Can Stella Hemetsberger defend her title vs Natalia Diachkova at ONE Fight Night 46?",
-      "published": "2026-08-10T20:00:01.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/o8lwZ6lGMQM/hqdefault.jpg",
-      "views": 598873,
-      "score": 3,
-      "rank": 64.29
+      "rank": 56.51
     },
     {
       "id": "VHppGLmSP_Y",
@@ -228,7 +276,19 @@
       "thumbnail": "https://i3.ytimg.com/vi/VHppGLmSP_Y/hqdefault.jpg",
       "views": 32134,
       "score": 8,
-      "rank": 62.19
+      "rank": 56
+    },
+    {
+      "id": "o8lwZ6lGMQM",
+      "title": "FIRED UP ❤️‍🔥 Can Stella Hemetsberger defend her title vs Natalia Diachkova at ONE Fight Night 46?",
+      "published": "2026-08-10T20:00:01.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/o8lwZ6lGMQM/hqdefault.jpg",
+      "views": 598873,
+      "score": 3,
+      "rank": 55.13
     },
     {
       "id": "x_7aY9xlWzg",
@@ -238,9 +298,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/x_7aY9xlWzg/hqdefault.jpg",
-      "views": 10815,
+      "views": 11681,
       "score": 7,
-      "rank": 55.88
+      "rank": 50.74
     },
     {
       "id": "oGOmwYTMf7I",
@@ -250,9 +310,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i4.ytimg.com/vi/oGOmwYTMf7I/hqdefault.jpg",
-      "views": 31845,
+      "views": 36194,
       "score": 8,
-      "rank": 53.65
+      "rank": 50.65
     },
     {
       "id": "LZ_QIm_cB-A",
@@ -262,9 +322,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i1.ytimg.com/vi/LZ_QIm_cB-A/hqdefault.jpg",
-      "views": 55621,
+      "views": 56048,
       "score": 8,
-      "rank": 53.26
+      "rank": 50.45
     },
     {
       "id": "kfy00YHn_X8",
@@ -274,9 +334,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i4.ytimg.com/vi/kfy00YHn_X8/hqdefault.jpg",
-      "views": 13051,
+      "views": 13334,
       "score": 8,
-      "rank": 50.64
+      "rank": 47.88
     },
     {
       "id": "sK94UG1JLxo",
@@ -286,21 +346,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i4.ytimg.com/vi/sK94UG1JLxo/hqdefault.jpg",
-      "views": 8534,
+      "views": 8792,
       "score": 8,
-      "rank": 49.98
-    },
-    {
-      "id": "AJhL5WOmE9E",
-      "title": "SPLIT DECISION?! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
-      "published": "2026-08-08T16:00:38.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i2.ytimg.com/vi/AJhL5WOmE9E/hqdefault.jpg",
-      "views": 2705,
-      "score": 8,
-      "rank": 49.69
+      "rank": 47.22
     },
     {
       "id": "csL3jX9efmQ",
@@ -310,9 +358,21 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i4.ytimg.com/vi/csL3jX9efmQ/hqdefault.jpg",
-      "views": 14050,
+      "views": 15392,
       "score": 7,
-      "rank": 49.43
+      "rank": 46.6
+    },
+    {
+      "id": "AJhL5WOmE9E",
+      "title": "SPLIT DECISION?! | Raufeon Stots v Lazaro Dayron | Full Fight | PFL New York",
+      "published": "2026-08-08T16:00:38.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/AJhL5WOmE9E/hqdefault.jpg",
+      "views": 2752,
+      "score": 8,
+      "rank": 46.4
     },
     {
       "id": "PtSAvbcEkfU",
@@ -322,21 +382,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i1.ytimg.com/vi/PtSAvbcEkfU/hqdefault.jpg",
-      "views": 14774,
+      "views": 14967,
       "score": 7,
-      "rank": 48.9
-    },
-    {
-      "id": "Vx32HUKBlA0",
-      "title": "UNANIMOUS DECISION! 😯Josh Silveira vs. Aaron Jeffery - Fight Highlights | PFL Charlotte",
-      "published": "2026-08-08T03:38:07.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i3.ytimg.com/vi/Vx32HUKBlA0/hqdefault.jpg",
-      "views": 2292,
-      "score": 8,
-      "rank": 47.54
+      "rank": 46.11
     },
     {
       "id": "D95ZLdBITwE",
@@ -346,9 +394,21 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/D95ZLdBITwE/hqdefault.jpg",
-      "views": 11441,
+      "views": 11916,
       "score": 8,
-      "rank": 46.76
+      "rank": 44.99
+    },
+    {
+      "id": "Vx32HUKBlA0",
+      "title": "UNANIMOUS DECISION! 😯Josh Silveira vs. Aaron Jeffery - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T03:38:07.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i3.ytimg.com/vi/Vx32HUKBlA0/hqdefault.jpg",
+      "views": 2335,
+      "score": 8,
+      "rank": 44.8
     },
     {
       "id": "lmStfWKphj4",
@@ -360,19 +420,7 @@
       "thumbnail": "https://i1.ytimg.com/vi/lmStfWKphj4/hqdefault.jpg",
       "views": 38540,
       "score": 5,
-      "rank": 46.39
-    },
-    {
-      "id": "uX2H91sbv3c",
-      "title": "Look at the hustle on this takedown attempt!👌 Dovlet Yagshimuradov vs. Simeon Powell #MMA #PFL",
-      "published": "2026-08-08T03:45:06.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i2.ytimg.com/vi/uX2H91sbv3c/hqdefault.jpg",
-      "views": 35375,
-      "score": 3,
-      "rank": 42.31
+      "rank": 43.63
     },
     {
       "id": "usZQOZzXc6Y",
@@ -382,21 +430,21 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i2.ytimg.com/vi/usZQOZzXc6Y/hqdefault.jpg",
-      "views": 40327,
+      "views": 42187,
       "score": 7,
-      "rank": 41.51
+      "rank": 40.83
     },
     {
-      "id": "yDNR-GoSKJQ",
-      "title": "2026 PFL New York | Battle vs Rosta | Post Show",
-      "published": "2026-08-08T17:15:10.000Z",
+      "id": "uX2H91sbv3c",
+      "title": "Look at the hustle on this takedown attempt!👌 Dovlet Yagshimuradov vs. Simeon Powell #MMA #PFL",
+      "published": "2026-08-08T03:45:06.000Z",
       "source": "pfl",
       "sourceName": "PFL",
       "channel": "PFL MMA",
-      "thumbnail": "https://i2.ytimg.com/vi/yDNR-GoSKJQ/hqdefault.jpg",
-      "views": 3029,
+      "thumbnail": "https://i2.ytimg.com/vi/uX2H91sbv3c/hqdefault.jpg",
+      "views": 36322,
       "score": 3,
-      "rank": 40.1
+      "rank": 39.58
     },
     {
       "id": "oZKG3GPM6Bw",
@@ -406,9 +454,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/oZKG3GPM6Bw/hqdefault.jpg",
-      "views": 113274,
+      "views": 114559,
       "score": 8,
-      "rank": 39.58
+      "rank": 39.49
     },
     {
       "id": "-GRHneaCKDA",
@@ -418,9 +466,21 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i2.ytimg.com/vi/-GRHneaCKDA/hqdefault.jpg",
-      "views": 7042,
+      "views": 7053,
       "score": 8,
-      "rank": 37.27
+      "rank": 36.95
+    },
+    {
+      "id": "yDNR-GoSKJQ",
+      "title": "2026 PFL New York | Battle vs Rosta | Post Show",
+      "published": "2026-08-08T17:15:10.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i2.ytimg.com/vi/yDNR-GoSKJQ/hqdefault.jpg",
+      "views": 3054,
+      "score": 3,
+      "rank": 36.73
     },
     {
       "id": "Wg-CyRSqx8k",
@@ -430,9 +490,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/Wg-CyRSqx8k/hqdefault.jpg",
-      "views": 4779,
+      "views": 4814,
       "score": 7,
-      "rank": 35.47
+      "rank": 35.06
     },
     {
       "id": "vvU99yTvU6I",
@@ -444,7 +504,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/vvU99yTvU6I/hqdefault.jpg",
       "views": 9118,
       "score": 8,
-      "rank": 34.63
+      "rank": 34.56
     },
     {
       "id": "3k3BwAGiRY4",
@@ -454,9 +514,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i4.ytimg.com/vi/3k3BwAGiRY4/hqdefault.jpg",
-      "views": 150719,
+      "views": 152284,
       "score": 4,
-      "rank": 34.29
+      "rank": 34.01
     },
     {
       "id": "F4exA-FFuOY",
@@ -466,9 +526,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i3.ytimg.com/vi/F4exA-FFuOY/hqdefault.jpg",
-      "views": 20788,
+      "views": 20821,
       "score": 6,
-      "rank": 32.32
+      "rank": 32.23
     },
     {
       "id": "xtAz78gY2E0",
@@ -478,9 +538,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/xtAz78gY2E0/hqdefault.jpg",
-      "views": 9766,
+      "views": 9777,
       "score": 6,
-      "rank": 31.96
+      "rank": 31.81
     },
     {
       "id": "y2U7mdfVCds",
@@ -490,9 +550,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i2.ytimg.com/vi/y2U7mdfVCds/hqdefault.jpg",
-      "views": 31226,
+      "views": 31267,
       "score": 4,
-      "rank": 31.53
+      "rank": 31.24
     },
     {
       "id": "ltVu2wtuDVE",
@@ -502,9 +562,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/ltVu2wtuDVE/hqdefault.jpg",
-      "views": 28638,
+      "views": 28677,
       "score": 4,
-      "rank": 31.45
+      "rank": 31.15
     },
     {
       "id": "obWEf4FqEW4",
@@ -514,9 +574,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i4.ytimg.com/vi/obWEf4FqEW4/hqdefault.jpg",
-      "views": 4322,
+      "views": 4339,
       "score": 4,
-      "rank": 28.76
+      "rank": 28.4
     },
     {
       "id": "sPgjDg_PDK0",
@@ -526,9 +586,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/sPgjDg_PDK0/hqdefault.jpg",
-      "views": 4715,
+      "views": 4739,
       "score": 3,
-      "rank": 24.26
+      "rank": 24.15
     }
   ],
   "problems": [
