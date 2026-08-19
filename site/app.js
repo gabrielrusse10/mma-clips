@@ -176,8 +176,11 @@ function buildQueueRow(item) {
 function renderHero(items) {
   // The hero is a view of the top of the feed, so it only makes sense in the
   // default ordering. Once someone sorts or searches, get out of the way.
+  // The hero plus its rundown eats five clips, so it only earns its place when
+  // enough are left to fill a grid underneath - otherwise filtering to a small
+  // promotion leaves the page looking truncated.
   const isDefaultView = state.sort === 'rank' && !state.query.trim();
-  if (!isDefaultView || items.length < 4) {
+  if (!isDefaultView || items.length < 9) {
     els.hero.hidden = true;
     els.hero.replaceChildren();
     return { rest: items };
