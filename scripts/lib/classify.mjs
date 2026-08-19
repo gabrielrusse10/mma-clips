@@ -19,6 +19,16 @@ const HARD_NEGATIVE = [
   /\bpress conference\b/,
   /\bpresser\b/,
   /\bweigh[- ]?ins?\b/,
+  /\bweighs? in\b/,
+  /\bspeaks? (on|about)\b/,
+  /\btalks? about\b/,
+  /\breacts? to\b/,
+  /\breaction\b/,
+  /\bpost[- ]?show\b/,
+  /\bcloser look\b/,
+  /\blive in hd\b/,
+  // Japanese: "TV programme" - a studio show, not a fight.
+  /【番組】/,
   /\bembedded\b/,
   /\bvlog\b/,
   /\bmedia day\b/,
@@ -62,10 +72,10 @@ const POSITIVE = [
   [/\bko'?s?\b/, 4],
   [/\bsubmissions?\b/, 5],
   [/\bfinish(es|ed)?\b/, 4],
-  [/\bfree fight\b/, 5],
-  [/\bfull fight\b/, 5],
+  [/\bfree fights?\b/, 5],
+  [/\bfull fights?\b/, 5],
   [/\bmain event\b/, 4],
-  [/\bfull (event|card)\b/, 3],
+  [/\bfull (event|card)s?\b/, 4],
   [/\bmain card\b/, 3],
   [/\bcompilation\b/, 3],
   [/\bbest of\b/, 3],
@@ -100,7 +110,7 @@ const POSITIVE = [
 
 /** Mild signals against - enough to break a tie, not enough to veto. */
 const SOFT_NEGATIVE = [
-  [/\bepisode \d+\b/, 2],
+  [/\bepisode \d+\b/, 1],
   [/\bpreview\b/, 3],
   [/\bbreakdown\b/, 3],
   [/\bannouncement\b/, 3],
@@ -149,11 +159,28 @@ export function scoreTitle(title) {
 }
 
 const HIGHLIGHT_THRESHOLD = 3;
+/**
+ * Hype for an upcoming fight is nearly always phrased as a question - "Can he
+ * finish him on Friday?" - while footage of one that already happened almost
+ * never is. Such a title has to clear a higher bar.
+ *
+ * It must *end* as a question, not merely contain one: "Pressure? What
+ * Pressure?! | Johnny Eblen Fight Compilation!" is a real reel that happens to
+ * open rhetorically.
+ */
+const QUESTION_THRESHOLD = 6;
+
+/** Trailing emoji and hashtags hide the real final punctuation. */
+function endsAsQuestion(title) {
+  return title.replace(/(\s|#\S+|[\p{Extended_Pictographic}️‍])+$/gu, '').endsWith('?');
+}
 
 /** True when the title looks like fight footage rather than promo content. */
 export function isHighlight(title) {
-  const { score, hardStop } = scoreTitle(title);
-  return !hardStop && score >= HIGHLIGHT_THRESHOLD;
+  const raw = String(title ?? '');
+  const { score, hardStop } = scoreTitle(raw);
+  if (hardStop) return false;
+  return score >= (endsAsQuestion(raw) ? QUESTION_THRESHOLD : HIGHLIGHT_THRESHOLD);
 }
 
 /**

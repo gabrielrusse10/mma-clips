@@ -83,6 +83,35 @@ test('a bare "v" only counts between two names', () => {
   assert.equal(isHighlight('Back in the gym after surgery'), false);
 });
 
+test('a title that is a question is hype, unless it is clearly footage', () => {
+  // Promos for fights that have not happened yet.
+  assert.equal(isHighlight('Can Nico Carrillo finish Zhou Jiaqiang at ONE Fight Night 46?'), false);
+  assert.equal(isHighlight('Will he score another KO this Friday?'), false);
+  assert.equal(isHighlight('Jak vidíte tenhle zápas vy?'), false);
+  // Trailing emoji must not hide the question mark.
+  assert.equal(isHighlight('Tak co to vajíčko? 👀🥚'), false);
+  // Merely opening rhetorically is fine when the title is real footage.
+  assert.equal(isHighlight('Pressure? What Pressure?! | Johnny Eblen Fight Compilation!'), true);
+  assert.equal(isHighlight('SPLIT DECISION?! | Stots v Dayron | Full Fight'), true);
+});
+
+test('studio and broadcast filler is not a fight', () => {
+  assert.equal(isHighlight('Cyborg and Vieira speak on their Main Event | PFL Tampa'), false);
+  assert.equal(isHighlight('Joe Rogan Reacts to Makhachev vs Machado Garry'), false);
+  assert.equal(isHighlight('Garry weighs in and makes the main event official!'), false);
+  assert.equal(isHighlight('2026 PFL New York | Battle vs Rosta | Post Show'), false);
+  assert.equal(isHighlight('🔴 [Live in HD] ONE Fight Night 46: Hemetsberger vs. Diachkova'), false);
+  assert.equal(isHighlight('A Closer Look To Cris Cyborg vs Ketlen Vieira'), false);
+  assert.equal(isHighlight('【番組】RIZIN CONFESSIONS #228 / 伊藤裕樹 vs. アリベク・ガジャマトフ'), false);
+});
+
+test('plural fight words count, and a full event is footage', () => {
+  // "\\bfull fight\\b" never matched the plural, so multi-fight uploads scored 0.
+  assert.equal(isHighlight('Stamp vs. Rassohyna I & II | MMA Full Fights'), true);
+  assert.equal(isHighlight("Viet Anh Do's Full Fights"), true);
+  assert.equal(isHighlight('2026 PFL Charlotte | Full Event'), true);
+});
+
 test('trash talk is not a fight', () => {
   assert.equal(isHighlight('🔥 Roušal vs. Magard trashtalk je tu!'), false);
   assert.equal(isHighlight('Best trash talk moments'), false);

@@ -2,8 +2,8 @@
   "updated": "2026-08-19T14:58:30.042Z",
   "counts": {
     "scanned": 123,
-    "published": 96,
-    "sources": 7
+    "published": 83,
+    "sources": 6
   },
   "promotions": [
     {
@@ -35,11 +35,6 @@
       "id": "rizin",
       "name": "RIZIN",
       "accent": "#e879f9"
-    },
-    {
-      "id": "oktagon",
-      "name": "OKTAGON",
-      "accent": "#38bdf8"
     }
   ],
   "items": [
@@ -66,18 +61,6 @@
       "views": 18380,
       "score": 8,
       "rank": 118.86
-    },
-    {
-      "id": "5zNnkTR1I60",
-      "title": "【番組】RIZIN CONFESSIONS #228 / 伊藤裕樹 vs. アリベク・ガジャマトフ etc.",
-      "published": "2026-08-19T10:00:06.000Z",
-      "source": "rizin",
-      "sourceName": "RIZIN",
-      "channel": "RIZIN FIGHTING FEDERATION",
-      "thumbnail": "https://i2.ytimg.com/vi/5zNnkTR1I60/hqdefault.jpg",
-      "views": 98106,
-      "score": 3,
-      "rank": 108.8
     },
     {
       "id": "X4KBLBWajHI",
@@ -186,30 +169,6 @@
       "views": 10766,
       "score": 8,
       "rank": 78.31
-    },
-    {
-      "id": "opGo5L7k00I",
-      "title": "Cris Cyborg and Ketlen Vieira speak on their #PFLTampa Main Event | PFL Tampa",
-      "published": "2026-08-18T18:17:22.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i4.ytimg.com/vi/opGo5L7k00I/hqdefault.jpg",
-      "views": 757,
-      "score": 4,
-      "rank": 73.23
-    },
-    {
-      "id": "xjv9pJzRsLY",
-      "title": "Jak vidíte tenhle zápas vy?",
-      "published": "2026-08-18T10:00:08.000Z",
-      "source": "oktagon",
-      "sourceName": "OKTAGON",
-      "channel": "OKTAGON CZSK",
-      "thumbnail": "https://i1.ytimg.com/vi/xjv9pJzRsLY/hqdefault.jpg",
-      "views": 11442,
-      "score": 4,
-      "rank": 69.54
     },
     {
       "id": "8WGYLzHURl4",
@@ -368,18 +327,6 @@
       "rank": 51.98
     },
     {
-      "id": "Zv4PCNVQmoI",
-      "title": "Joe Rogan Reacts to Makhachev vs Machado Garry | UFC 330",
-      "published": "2026-08-16T04:51:27.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i3.ytimg.com/vi/Zv4PCNVQmoI/hqdefault.jpg",
-      "views": 272070,
-      "score": 3,
-      "rank": 50.36
-    },
-    {
       "id": "Yp5FDfp3D1I",
       "title": "CAN'T MISS THIS BATTLE! | Bryan Battle v Dalton Rosta | Full Fight | PFL Charlotte",
       "published": "2026-08-15T14:00:06.000Z",
@@ -426,18 +373,6 @@
       "views": 108827,
       "score": 5,
       "rank": 49.51
-    },
-    {
-      "id": "fY57Sifg0zk",
-      "title": "Tak co to vajíčko? 👀🥚",
-      "published": "2026-08-16T17:00:17.000Z",
-      "source": "oktagon",
-      "sourceName": "OKTAGON",
-      "channel": "OKTAGON CZSK",
-      "thumbnail": "https://i3.ytimg.com/vi/fY57Sifg0zk/hqdefault.jpg",
-      "views": 8469,
-      "score": 4,
-      "rank": 49.25
     },
     {
       "id": "xtHujrBMGYs",
@@ -584,18 +519,6 @@
       "rank": 45.96
     },
     {
-      "id": "I8f0cp5JVU4",
-      "title": "Gingsanglek always brings the action 🤩 Will he score another KO this Friday at The Inner Circle 26?",
-      "published": "2026-08-14T10:00:31.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i2.ytimg.com/vi/I8f0cp5JVU4/hqdefault.jpg",
-      "views": 200514,
-      "score": 4,
-      "rank": 45.32
-    },
-    {
       "id": "x8P8HPt5xbk",
       "title": "BIRTHDAY KO 🎂 Marcos Aurelio stops Jhanlo Mark Sangiao in 57 seconds!",
       "published": "2026-08-15T03:38:23.000Z",
@@ -668,18 +591,6 @@
       "rank": 43.55
     },
     {
-      "id": "FKNV9uX3TcY",
-      "title": "Ian Machado Garry weighs in and makes the main event official! #ufc330",
-      "published": "2026-08-14T13:49:43.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i3.ytimg.com/vi/FKNV9uX3TcY/hqdefault.jpg",
-      "views": 55029,
-      "score": 4,
-      "rank": 43.5
-    },
-    {
       "id": "oGOmwYTMf7I",
       "title": "LIGHTS OUT! | Usman Nurmagomedov v Archie Colgan | Full Fight | PFL New York",
       "published": "2026-08-08T14:00:06.000Z",
@@ -714,18 +625,6 @@
       "views": 12286,
       "score": 5,
       "rank": 42.58
-    },
-    {
-      "id": "KYBiKYo7x0E",
-      "title": "Paid back with interest 👊💥 Can Nico Carrillo finish Zhou Jiaqiang at ONE Fight Night 46?",
-      "published": "2026-08-12T03:00:28.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/KYBiKYo7x0E/hqdefault.jpg",
-      "views": 394404,
-      "score": 4,
-      "rank": 42.15
     },
     {
       "id": "5uaqPrgGORA",
@@ -846,18 +745,6 @@
       "views": 21086,
       "score": 7,
       "rank": 39.45
-    },
-    {
-      "id": "o8lwZ6lGMQM",
-      "title": "FIRED UP ❤️‍🔥 Can Stella Hemetsberger defend her title vs Natalia Diachkova at ONE Fight Night 46?",
-      "published": "2026-08-10T20:00:01.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/o8lwZ6lGMQM/hqdefault.jpg",
-      "views": 598873,
-      "score": 3,
-      "rank": 39.32
     },
     {
       "id": "HoSygRoivu4",
@@ -1004,18 +891,6 @@
       "rank": 35.59
     },
     {
-      "id": "hSnpPWsetms",
-      "title": "A Closer Look To Cris Cyborg vs Ketlen Vieira | PFL Tampa",
-      "published": "2026-08-13T20:54:17.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i1.ytimg.com/vi/hSnpPWsetms/hqdefault.jpg",
-      "views": 2407,
-      "score": 3,
-      "rank": 34.34
-    },
-    {
       "id": "vvU99yTvU6I",
       "title": "Two Bellator Fighters CLASH! | Alexandr Shabliy v Alfie Davis II | Full Fight",
       "published": "2026-07-08T21:00:30.000Z",
@@ -1136,18 +1011,6 @@
       "rank": 29.88
     },
     {
-      "id": "yDNR-GoSKJQ",
-      "title": "2026 PFL New York | Battle vs Rosta | Post Show",
-      "published": "2026-08-08T17:15:10.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i2.ytimg.com/vi/yDNR-GoSKJQ/hqdefault.jpg",
-      "views": 3084,
-      "score": 3,
-      "rank": 28.36
-    },
-    {
       "id": "obWEf4FqEW4",
       "title": "Leśko nowym mistrzem! #ksw #mma #shorts",
       "published": "2026-07-28T14:00:25.000Z",
@@ -1160,18 +1023,6 @@
       "rank": 26.93
     },
     {
-      "id": "W7-30Uq6HSQ",
-      "title": "🔴 [Live in HD] ONE Fight Night 46: Hemetsberger vs. Diachkova",
-      "published": "2026-08-15T04:41:56.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/W7-30Uq6HSQ/hqdefault.jpg",
-      "views": 0,
-      "score": 3,
-      "rank": 24.42
-    },
-    {
       "id": "sPgjDg_PDK0",
       "title": "Pressure? What Pressure?! | Johnny Eblen Fight Compilation!",
       "published": "2026-07-16T16:00:02.000Z",
@@ -1182,18 +1033,6 @@
       "views": 4853,
       "score": 3,
       "rank": 23.61
-    },
-    {
-      "id": "dHY6uudM9gU",
-      "title": "🔴 [Live in HD] ONE Friday Fights 166: Khunpon vs. Panpadej",
-      "published": "2026-08-11T03:12:47.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i1.ytimg.com/vi/dHY6uudM9gU/hqdefault.jpg",
-      "views": 0,
-      "score": 3,
-      "rank": 16.54
     }
   ],
   "problems": [
