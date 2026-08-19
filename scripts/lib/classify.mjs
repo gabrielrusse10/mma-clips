@@ -110,12 +110,13 @@ const SOFT_NEGATIVE = [
 ];
 
 /**
- * Bellator writes matchups as "Chandler v Henderson". Matching a bare "v"
- * needs the opponent's capital letter, or it fires on ordinary prepositions -
- * Czech "znovu v kleci" ("in the cage again") is not a fight video.
+ * Bellator writes matchups as "Chandler v Henderson". A bare "v" needs a
+ * capitalised name on *both* sides, or it fires on ordinary prepositions:
+ * Czech "znovu v kleci" ("in the cage again") and "jízda v Brně" ("a ride in
+ * Brno") are not fight videos, and the second one has a capital after the v.
  * Tested against the original title, since case is the whole signal.
  */
-const MATCHUP = /\p{L}\s+v\.?\s+\p{Lu}/u;
+const MATCHUP = /\p{Lu}[\p{L}'’-]*\s+v\.?\s+\p{Lu}/u;
 
 /** Score a title. `hardStop` means it was vetoed outright. */
 export function scoreTitle(title) {

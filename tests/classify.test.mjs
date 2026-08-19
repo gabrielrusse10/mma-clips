@@ -75,9 +75,11 @@ test('a mild word does not sink a clear highlight', () => {
 test('a bare "v" only counts between two names', () => {
   assert.equal(isHighlight('Michael Chandler v Benson Henderson | Full Fight'), true);
   assert.equal(isHighlight('Chandler v Henderson'), true);
-  // Czech for "when will we see Macha in the cage again?" - "v" is a
-  // preposition here, not a matchup.
+  assert.equal(isHighlight('HEAD KICK KO! | Rafael Carvalho v Melvin Manhoef II | Full Fight'), true);
+  // Czech prepositions: "when will we see Macha in the cage again?" and
+  // "another crazy ride in Brno" - the second even capitalises after the "v".
   assert.equal(isHighlight('Kdy uvidíme Macha znovu v kleci? 👀🔥'), false);
+  assert.equal(isHighlight('RUCHYHO další šílená jízda v Brně! 🔥'), false);
   assert.equal(isHighlight('Back in the gym after surgery'), false);
 });
 
