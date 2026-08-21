@@ -1,8 +1,8 @@
 {
-  "updated": "2026-08-20T15:03:52.793Z",
+  "updated": "2026-08-21T14:59:17.112Z",
   "counts": {
     "scanned": 123,
-    "published": 87,
+    "published": 92,
     "sources": 7
   },
   "promotions": [
@@ -44,16 +44,52 @@
   ],
   "items": [
     {
-      "id": "vS0GmqFt7IQ",
-      "title": "“The Man Who Yields To No One” Fears NOTHING 👊💥 Seksan Full Fight Compilation",
-      "published": "2026-08-20T11:00:06.000Z",
+      "id": "SwOTk8Al06M",
+      "title": "On a RAMPAGE 🔥 Team Teppen star Raize 🇯🇵 scores a first-round KO in his ONE debut!",
+      "published": "2026-08-21T14:08:27.000Z",
       "source": "one",
       "sourceName": "ONE Championship",
       "channel": "ONE Championship",
-      "thumbnail": "https://i3.ytimg.com/vi/vS0GmqFt7IQ/hqdefault.jpg",
-      "views": 8910,
+      "thumbnail": "https://i4.ytimg.com/vi/SwOTk8Al06M/hqdefault.jpg",
+      "views": 3741,
+      "score": 4,
+      "rank": 118.88
+    },
+    {
+      "id": "whXT7dS2AVo",
+      "title": "PERFECT head kick from Giorgia Pieropan 🤩",
+      "published": "2026-08-21T14:32:21.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/whXT7dS2AVo/hqdefault.jpg",
+      "views": 1219,
+      "score": 3,
+      "rank": 116.51
+    },
+    {
+      "id": "ugq5vHyEg5U",
+      "title": "Full Fight | 佐藤将光 vs. パッチー・ミックス / Shoko Sato vs. Patchy Mix - RIZIN.54 - 2026.8.11",
+      "published": "2026-08-21T10:00:33.000Z",
+      "source": "rizin",
+      "sourceName": "RIZIN",
+      "channel": "RIZIN FIGHTING FEDERATION",
+      "thumbnail": "https://i2.ytimg.com/vi/ugq5vHyEg5U/hqdefault.jpg",
+      "views": 16025,
       "score": 8,
-      "rank": 117.32
+      "rank": 115.64
+    },
+    {
+      "id": "_yMXXclbvmE",
+      "title": "CYBORG ARRIVES! | Cris Cyborg v Julia Budd | Full Fight | Bellator 238",
+      "published": "2026-08-20T19:00:37.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/_yMXXclbvmE/hqdefault.jpg",
+      "views": 2349,
+      "score": 8,
+      "rank": 84.06
     },
     {
       "id": "9oCEHJyY-yw",
@@ -63,9 +99,21 @@
       "sourceName": "OKTAGON",
       "channel": "OKTAGON CZSK",
       "thumbnail": "https://i2.ytimg.com/vi/9oCEHJyY-yw/hqdefault.jpg",
-      "views": 1,
+      "views": 1250,
       "score": 8,
-      "rank": 116.97
+      "rank": 78.41
+    },
+    {
+      "id": "vS0GmqFt7IQ",
+      "title": "“The Man Who Yields To No One” Fears NOTHING 👊💥 Seksan Full Fight Compilation",
+      "published": "2026-08-20T11:00:06.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i3.ytimg.com/vi/vS0GmqFt7IQ/hqdefault.jpg",
+      "views": 8910,
+      "score": 8,
+      "rank": 77.97
     },
     {
       "id": "cMF4m0c7sio",
@@ -77,43 +125,19 @@
       "thumbnail": "https://i4.ytimg.com/vi/cMF4m0c7sio/hqdefault.jpg",
       "views": 240968,
       "score": 4,
-      "rank": 104.39
+      "rank": 72.4
     },
     {
-      "id": "ZHsiHHCm1o4",
-      "title": "LIGHTWEIGHT SHOWDOWN! | Gadzhi Rabadanov v Ryoji Takeda | Full Fight",
-      "published": "2026-08-19T21:00:15.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i3.ytimg.com/vi/ZHsiHHCm1o4/hqdefault.jpg",
-      "views": 10967,
-      "score": 8,
-      "rank": 89.22
-    },
-    {
-      "id": "gtzfvi5M_b0",
-      "title": "INSANE KNOCKOUT! | Kaik Brito vs Namo Fazil | DWCS",
-      "published": "2026-08-19T13:00:20.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i4.ytimg.com/vi/gtzfvi5M_b0/hqdefault.jpg",
-      "views": 159988,
-      "score": 8,
-      "rank": 84.76
-    },
-    {
-      "id": "pN4gNJ0kcVc",
-      "title": "Rodtang DESTROYED Takeru in 80 SECONDS 😱 Rodtang vs. Takeru | Kickboxing Full Fight",
-      "published": "2026-08-19T11:00:12.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i1.ytimg.com/vi/pN4gNJ0kcVc/hqdefault.jpg",
-      "views": 90630,
-      "score": 8,
-      "rank": 81.93
+      "id": "4l_UZWNixMw",
+      "title": "HEAD KICK KO! | Rafael Carvalho v Melvin Manhoef II | Full Fight",
+      "published": "2026-08-18T16:00:31.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i1.ytimg.com/vi/4l_UZWNixMw/hqdefault.jpg",
+      "views": 12657,
+      "score": 15,
+      "rank": 71.68
     },
     {
       "id": "X4KBLBWajHI",
@@ -125,31 +149,43 @@
       "thumbnail": "https://i1.ytimg.com/vi/X4KBLBWajHI/hqdefault.jpg",
       "views": 37689,
       "score": 13,
-      "rank": 81.47
+      "rank": 71.42
     },
     {
-      "id": "4l_UZWNixMw",
-      "title": "HEAD KICK KO! | Rafael Carvalho v Melvin Manhoef II | Full Fight",
-      "published": "2026-08-18T16:00:31.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i1.ytimg.com/vi/4l_UZWNixMw/hqdefault.jpg",
-      "views": 11437,
-      "score": 15,
-      "rank": 80.01
-    },
-    {
-      "id": "-YmNz6_rqLs",
-      "title": "Full Fight | クレベル・コイケ vs. 秋元強真 / Kleber Koike vs. Kyoma Akimoto - RIZIN.54 - 2026.8.11",
-      "published": "2026-08-18T10:00:15.000Z",
-      "source": "rizin",
-      "sourceName": "RIZIN",
-      "channel": "RIZIN FIGHTING FEDERATION",
-      "thumbnail": "https://i2.ytimg.com/vi/-YmNz6_rqLs/hqdefault.jpg",
-      "views": 665714,
+      "id": "ZHsiHHCm1o4",
+      "title": "LIGHTWEIGHT SHOWDOWN! | Gadzhi Rabadanov v Ryoji Takeda | Full Fight",
+      "published": "2026-08-19T21:00:15.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i3.ytimg.com/vi/ZHsiHHCm1o4/hqdefault.jpg",
+      "views": 43241,
       "score": 8,
-      "rank": 70.44
+      "rank": 70.92
+    },
+    {
+      "id": "gtzfvi5M_b0",
+      "title": "INSANE KNOCKOUT! | Kaik Brito vs Namo Fazil | DWCS",
+      "published": "2026-08-19T13:00:20.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i4.ytimg.com/vi/gtzfvi5M_b0/hqdefault.jpg",
+      "views": 237648,
+      "score": 8,
+      "rank": 69.94
+    },
+    {
+      "id": "pN4gNJ0kcVc",
+      "title": "Rodtang DESTROYED Takeru in 80 SECONDS 😱 Rodtang vs. Takeru | Kickboxing Full Fight",
+      "published": "2026-08-19T11:00:12.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i1.ytimg.com/vi/pN4gNJ0kcVc/hqdefault.jpg",
+      "views": 90630,
+      "score": 8,
+      "rank": 67.41
     },
     {
       "id": "W01iYwNDWeU",
@@ -159,9 +195,21 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i4.ytimg.com/vi/W01iYwNDWeU/hqdefault.jpg",
-      "views": 9710,
+      "views": 10458,
       "score": 14,
-      "rank": 70.02
+      "rank": 64.77
+    },
+    {
+      "id": "-YmNz6_rqLs",
+      "title": "Full Fight | クレベル・コイケ vs. 秋元強真 / Kleber Koike vs. Kyoma Akimoto - RIZIN.54 - 2026.8.11",
+      "published": "2026-08-18T10:00:15.000Z",
+      "source": "rizin",
+      "sourceName": "RIZIN",
+      "channel": "RIZIN FIGHTING FEDERATION",
+      "thumbnail": "https://i2.ytimg.com/vi/-YmNz6_rqLs/hqdefault.jpg",
+      "views": 716051,
+      "score": 8,
+      "rank": 63.19
     },
     {
       "id": "NOqCzMFkeds",
@@ -171,21 +219,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i3.ytimg.com/vi/NOqCzMFkeds/hqdefault.jpg",
-      "views": 17208,
+      "views": 25600,
       "score": 8,
-      "rank": 69.84
-    },
-    {
-      "id": "pjKuaHI8vDM",
-      "title": "Insane Highlights From Dana White's Contender Series Episode 2",
-      "published": "2026-08-19T02:36:03.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i1.ytimg.com/vi/pjKuaHI8vDM/hqdefault.jpg",
-      "views": 273060,
-      "score": 4,
-      "rank": 69.44
+      "rank": 60.61
     },
     {
       "id": "kZZZEsRM4ww",
@@ -197,7 +233,19 @@
       "thumbnail": "https://i4.ytimg.com/vi/kZZZEsRM4ww/hqdefault.jpg",
       "views": 43433,
       "score": 8,
-      "rank": 68.25
+      "rank": 59.78
+    },
+    {
+      "id": "pjKuaHI8vDM",
+      "title": "Insane Highlights From Dana White's Contender Series Episode 2",
+      "published": "2026-08-19T02:36:03.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i1.ytimg.com/vi/pjKuaHI8vDM/hqdefault.jpg",
+      "views": 325210,
+      "score": 4,
+      "rank": 58.49
     },
     {
       "id": "wP3Xm2kYwjk",
@@ -209,7 +257,7 @@
       "thumbnail": "https://i4.ytimg.com/vi/wP3Xm2kYwjk/hqdefault.jpg",
       "views": 21921,
       "score": 8,
-      "rank": 66.21
+      "rank": 58.11
     },
     {
       "id": "6A9JqD2gySA",
@@ -221,31 +269,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/6A9JqD2gySA/hqdefault.jpg",
       "views": 10766,
       "score": 8,
-      "rank": 63.68
-    },
-    {
-      "id": "8WGYLzHURl4",
-      "title": "Anthony Hernandez vs Michel Pereira | FULL FIGHT | UFC Sacramento",
-      "published": "2026-08-17T14:30:35.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i1.ytimg.com/vi/8WGYLzHURl4/hqdefault.jpg",
-      "views": 34574,
-      "score": 8,
-      "rank": 59.01
-    },
-    {
-      "id": "PfGEVlUiEfM",
-      "title": "HEATED MAIN EVENT! | Bryan Battle v Dalton Rosta | Full Fight | PFL Charlotte",
-      "published": "2026-08-16T14:00:32.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i1.ytimg.com/vi/PfGEVlUiEfM/hqdefault.jpg",
-      "views": 3991,
-      "score": 12,
-      "rank": 58.23
+      "rank": 56.13
     },
     {
       "id": "Woh5bS8sP04",
@@ -257,7 +281,31 @@
       "thumbnail": "https://i4.ytimg.com/vi/Woh5bS8sP04/hqdefault.jpg",
       "views": 28365,
       "score": 14,
-      "rank": 57.13
+      "rank": 55.98
+    },
+    {
+      "id": "PfGEVlUiEfM",
+      "title": "HEATED MAIN EVENT! | Bryan Battle v Dalton Rosta | Full Fight | PFL Charlotte",
+      "published": "2026-08-16T14:00:32.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i1.ytimg.com/vi/PfGEVlUiEfM/hqdefault.jpg",
+      "views": 4150,
+      "score": 12,
+      "rank": 55.03
+    },
+    {
+      "id": "8WGYLzHURl4",
+      "title": "Anthony Hernandez vs Michel Pereira | FULL FIGHT | UFC Sacramento",
+      "published": "2026-08-17T14:30:35.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i1.ytimg.com/vi/8WGYLzHURl4/hqdefault.jpg",
+      "views": 34574,
+      "score": 8,
+      "rank": 54.08
     },
     {
       "id": "RyBcyfk2TPY",
@@ -269,7 +317,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/RyBcyfk2TPY/hqdefault.jpg",
       "views": 197854,
       "score": 8,
-      "rank": 56.53
+      "rank": 53.4
     },
     {
       "id": "sUJwR6CctH4",
@@ -281,7 +329,7 @@
       "thumbnail": "https://i4.ytimg.com/vi/sUJwR6CctH4/hqdefault.jpg",
       "views": 163156,
       "score": 8,
-      "rank": 56.31
+      "rank": 53.15
     },
     {
       "id": "vxy6fDEsBik",
@@ -291,9 +339,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i3.ytimg.com/vi/vxy6fDEsBik/hqdefault.jpg",
-      "views": 87724,
+      "views": 98956,
       "score": 8,
-      "rank": 55.6
+      "rank": 52.54
     },
     {
       "id": "teAwmNMzF0c",
@@ -305,7 +353,7 @@
       "thumbnail": "https://i1.ytimg.com/vi/teAwmNMzF0c/hqdefault.jpg",
       "views": 7900,
       "score": 3,
-      "rank": 55.58
+      "rank": 50.95
     },
     {
       "id": "0a15RdDSCZo",
@@ -315,9 +363,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i1.ytimg.com/vi/0a15RdDSCZo/hqdefault.jpg",
-      "views": 3740,
+      "views": 4085,
       "score": 8,
-      "rank": 55.02
+      "rank": 50.28
     },
     {
       "id": "NI4Z3v9aMno",
@@ -327,9 +375,9 @@
       "sourceName": "PFL",
       "channel": "PFL MMA",
       "thumbnail": "https://i3.ytimg.com/vi/NI4Z3v9aMno/hqdefault.jpg",
-      "views": 13088,
+      "views": 13444,
       "score": 8,
-      "rank": 52.29
+      "rank": 49.07
     },
     {
       "id": "OhmSWLmMh_Q",
@@ -341,31 +389,7 @@
       "thumbnail": "https://i4.ytimg.com/vi/OhmSWLmMh_Q/hqdefault.jpg",
       "views": 12286,
       "score": 5,
-      "rank": 50.31
-    },
-    {
-      "id": "YtEACHGzwbU",
-      "title": "100% KO RATE 🔥 Viet Anh Do 🇳🇿🇻🇳 improves to 6-0 in ONE with a third-round finish of Davi Brandão!",
-      "published": "2026-08-15T02:55:23.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i2.ytimg.com/vi/YtEACHGzwbU/hqdefault.jpg",
-      "views": 28250,
-      "score": 8,
-      "rank": 49.17
-    },
-    {
-      "id": "jm7fxOTAdz0",
-      "title": "Carlos Prates was bored during the main event #ufc330",
-      "published": "2026-08-16T05:23:03.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i3.ytimg.com/vi/jm7fxOTAdz0/hqdefault.jpg",
-      "views": 433676,
-      "score": 4,
-      "rank": 49.06
+      "rank": 48.6
     },
     {
       "id": "gkjcIfHSVYc",
@@ -375,9 +399,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/gkjcIfHSVYc/hqdefault.jpg",
-      "views": 9727,
+      "views": 9869,
       "score": 12,
-      "rank": 49.01
+      "rank": 48.28
     },
     {
       "id": "XXanTVuVEbk",
@@ -389,31 +413,19 @@
       "thumbnail": "https://i1.ytimg.com/vi/XXanTVuVEbk/hqdefault.jpg",
       "views": 631103,
       "score": 8,
-      "rank": 49.01
+      "rank": 48.13
     },
     {
-      "id": "Rars_t_UBMc",
-      "title": "Islam Makhachev vs Ian Machado Garry 🚨 | UFC 330",
-      "published": "2026-08-16T13:00:26.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i3.ytimg.com/vi/Rars_t_UBMc/hqdefault.jpg",
-      "views": 614088,
-      "score": 3,
-      "rank": 48.82
-    },
-    {
-      "id": "y8wtdFlhydg",
-      "title": "HIGH LIGHT REEL ALERT 🚨 Superbon served up a SAVAGE head-kick finish against Giorgio Petrosyan! 🤯",
-      "published": "2026-08-16T11:00:20.000Z",
+      "id": "YtEACHGzwbU",
+      "title": "100% KO RATE 🔥 Viet Anh Do 🇳🇿🇻🇳 improves to 6-0 in ONE with a third-round finish of Davi Brandão!",
+      "published": "2026-08-15T02:55:23.000Z",
       "source": "one",
       "sourceName": "ONE Championship",
       "channel": "ONE Championship",
-      "thumbnail": "https://i2.ytimg.com/vi/y8wtdFlhydg/hqdefault.jpg",
-      "views": 121262,
-      "score": 4,
-      "rank": 47.68
+      "thumbnail": "https://i2.ytimg.com/vi/YtEACHGzwbU/hqdefault.jpg",
+      "views": 28250,
+      "score": 8,
+      "rank": 47.13
     },
     {
       "id": "JcW1B3ACwU4",
@@ -425,7 +437,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/JcW1B3ACwU4/hqdefault.jpg",
       "views": 304207,
       "score": 8,
-      "rank": 47.67
+      "rank": 46.81
     },
     {
       "id": "xtHujrBMGYs",
@@ -437,31 +449,31 @@
       "thumbnail": "https://i1.ytimg.com/vi/xtHujrBMGYs/hqdefault.jpg",
       "views": 85723,
       "score": 8,
-      "rank": 47.49
+      "rank": 46.26
     },
     {
-      "id": "Yp5FDfp3D1I",
-      "title": "CAN'T MISS THIS BATTLE! | Bryan Battle v Dalton Rosta | Full Fight | PFL Charlotte",
-      "published": "2026-08-15T14:00:06.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i2.ytimg.com/vi/Yp5FDfp3D1I/hqdefault.jpg",
-      "views": 4040,
-      "score": 8,
-      "rank": 46.97
+      "id": "jm7fxOTAdz0",
+      "title": "Carlos Prates was bored during the main event #ufc330",
+      "published": "2026-08-16T05:23:03.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i3.ytimg.com/vi/jm7fxOTAdz0/hqdefault.jpg",
+      "views": 433676,
+      "score": 4,
+      "rank": 46.17
     },
     {
-      "id": "wDkqKdfIsEM",
-      "title": "ONE Friday Fights 166 | THRILLING Fight Highlights 👊",
-      "published": "2026-08-15T11:00:21.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/wDkqKdfIsEM/hqdefault.jpg",
-      "views": 108827,
-      "score": 5,
-      "rank": 46.36
+      "id": "Rars_t_UBMc",
+      "title": "Islam Makhachev vs Ian Machado Garry 🚨 | UFC 330",
+      "published": "2026-08-16T13:00:26.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i3.ytimg.com/vi/Rars_t_UBMc/hqdefault.jpg",
+      "views": 614088,
+      "score": 3,
+      "rank": 45.59
     },
     {
       "id": "s5K0HJf7NpY",
@@ -473,31 +485,31 @@
       "thumbnail": "https://i4.ytimg.com/vi/s5K0HJf7NpY/hqdefault.jpg",
       "views": 66455,
       "score": 8,
-      "rank": 45.81
+      "rank": 44.81
     },
     {
-      "id": "WujBptZ6708",
-      "title": "WHAT A DEBUT! | Moustapha Diakhaté v Darryl King Walker | Full Fight | PFL New York",
-      "published": "2026-08-13T19:00:08.000Z",
+      "id": "Yp5FDfp3D1I",
+      "title": "CAN'T MISS THIS BATTLE! | Bryan Battle v Dalton Rosta | Full Fight | PFL Charlotte",
+      "published": "2026-08-15T14:00:06.000Z",
       "source": "pfl",
       "sourceName": "PFL",
       "channel": "PFL MMA",
-      "thumbnail": "https://i4.ytimg.com/vi/WujBptZ6708/hqdefault.jpg",
-      "views": 15393,
+      "thumbnail": "https://i2.ytimg.com/vi/Yp5FDfp3D1I/hqdefault.jpg",
+      "views": 4040,
       "score": 8,
-      "rank": 45.51
+      "rank": 44.63
     },
     {
-      "id": "3P2yZbM1FN0",
-      "title": "ONE Fight Night 46 🔥 CRAZY Highlights | Nico Carrillo, Stella Hemetsberger & MORE",
-      "published": "2026-08-15T09:00:31.000Z",
+      "id": "y8wtdFlhydg",
+      "title": "HIGH LIGHT REEL ALERT 🚨 Superbon served up a SAVAGE head-kick finish against Giorgio Petrosyan! 🤯",
+      "published": "2026-08-16T11:00:20.000Z",
       "source": "one",
       "sourceName": "ONE Championship",
       "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/3P2yZbM1FN0/hqdefault.jpg",
-      "views": 73567,
-      "score": 5,
-      "rank": 45.46
+      "thumbnail": "https://i2.ytimg.com/vi/y8wtdFlhydg/hqdefault.jpg",
+      "views": 121262,
+      "score": 4,
+      "rank": 44.55
     },
     {
       "id": "-4phj5l7Plc",
@@ -509,19 +521,31 @@
       "thumbnail": "https://i2.ytimg.com/vi/-4phj5l7Plc/hqdefault.jpg",
       "views": 79104,
       "score": 8,
-      "rank": 45.43
+      "rank": 44.55
     },
     {
-      "id": "ARLw16dirAI",
-      "title": "Kickboxing CLASH! | Dakota Ditcheva v Denise Kielholtz | Full Fight",
-      "published": "2026-08-14T16:00:12.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i2.ytimg.com/vi/ARLw16dirAI/hqdefault.jpg",
-      "views": 4335,
+      "id": "wDkqKdfIsEM",
+      "title": "ONE Friday Fights 166 | THRILLING Fight Highlights 👊",
+      "published": "2026-08-15T11:00:21.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/wDkqKdfIsEM/hqdefault.jpg",
+      "views": 108827,
+      "score": 5,
+      "rank": 44.1
+    },
+    {
+      "id": "WujBptZ6708",
+      "title": "WHAT A DEBUT! | Moustapha Diakhaté v Darryl King Walker | Full Fight | PFL New York",
+      "published": "2026-08-13T19:00:08.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/WujBptZ6708/hqdefault.jpg",
+      "views": 15393,
       "score": 8,
-      "rank": 44.91
+      "rank": 44.07
     },
     {
       "id": "J4QDgUoO6KE",
@@ -533,7 +557,31 @@
       "thumbnail": "https://i3.ytimg.com/vi/J4QDgUoO6KE/hqdefault.jpg",
       "views": 61019,
       "score": 8,
-      "rank": 44.9
+      "rank": 44.03
+    },
+    {
+      "id": "3P2yZbM1FN0",
+      "title": "ONE Fight Night 46 🔥 CRAZY Highlights | Nico Carrillo, Stella Hemetsberger & MORE",
+      "published": "2026-08-15T09:00:31.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/3P2yZbM1FN0/hqdefault.jpg",
+      "views": 73567,
+      "score": 5,
+      "rank": 43.26
+    },
+    {
+      "id": "ARLw16dirAI",
+      "title": "Kickboxing CLASH! | Dakota Ditcheva v Denise Kielholtz | Full Fight",
+      "published": "2026-08-14T16:00:12.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/ARLw16dirAI/hqdefault.jpg",
+      "views": 4397,
+      "score": 8,
+      "rank": 43.14
     },
     {
       "id": "HyYsoRPMelI",
@@ -545,19 +593,7 @@
       "thumbnail": "https://i1.ytimg.com/vi/HyYsoRPMelI/hqdefault.jpg",
       "views": 67164,
       "score": 5,
-      "rank": 44.19
-    },
-    {
-      "id": "-_ZNm6ULyUg",
-      "title": "NASTY WORK 😱 Featherweight Muay Thai king Nico Carrillo KOs Zhou Jiaqiang in his kickboxing debut!",
-      "published": "2026-08-15T04:01:11.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i2.ytimg.com/vi/-_ZNm6ULyUg/hqdefault.jpg",
-      "views": 145597,
-      "score": 4,
-      "rank": 44.13
+      "rank": 42.27
     },
     {
       "id": "VRD1sONGGHg",
@@ -569,7 +605,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/VRD1sONGGHg/hqdefault.jpg",
       "views": 650040,
       "score": 3,
-      "rank": 44.13
+      "rank": 42.21
     },
     {
       "id": "ACXJBvzuxbg",
@@ -581,31 +617,19 @@
       "thumbnail": "https://i2.ytimg.com/vi/ACXJBvzuxbg/hqdefault.jpg",
       "views": 26967,
       "score": 6,
-      "rank": 43.83
+      "rank": 42.09
     },
     {
-      "id": "qshT-RzXMrg",
-      "title": "ABSOLUTE WAR! | Omar El Dafrawy v Jonathan Piersma | Full Fight | PFL New York",
-      "published": "2026-08-12T22:00:16.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i2.ytimg.com/vi/qshT-RzXMrg/hqdefault.jpg",
-      "views": 7348,
-      "score": 8,
-      "rank": 42.94
-    },
-    {
-      "id": "OM4ZfMAEQoI",
-      "title": "Hokit In Action! | Josh Hokit v Spencer Smith | Full Fight",
-      "published": "2026-08-12T19:00:17.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i4.ytimg.com/vi/OM4ZfMAEQoI/hqdefault.jpg",
-      "views": 7933,
-      "score": 8,
-      "rank": 42.92
+      "id": "-_ZNm6ULyUg",
+      "title": "NASTY WORK 😱 Featherweight Muay Thai king Nico Carrillo KOs Zhou Jiaqiang in his kickboxing debut!",
+      "published": "2026-08-15T04:01:11.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i2.ytimg.com/vi/-_ZNm6ULyUg/hqdefault.jpg",
+      "views": 145597,
+      "score": 4,
+      "rank": 42.06
     },
     {
       "id": "VHppGLmSP_Y",
@@ -617,31 +641,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/VHppGLmSP_Y/hqdefault.jpg",
       "views": 32134,
       "score": 8,
-      "rank": 42.72
-    },
-    {
-      "id": "x8P8HPt5xbk",
-      "title": "BIRTHDAY KO 🎂 Marcos Aurelio stops Jhanlo Mark Sangiao in 57 seconds!",
-      "published": "2026-08-15T03:38:23.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i1.ytimg.com/vi/x8P8HPt5xbk/hqdefault.jpg",
-      "views": 56468,
-      "score": 4,
-      "rank": 42.45
-    },
-    {
-      "id": "FyNq6LVVLDo",
-      "title": "Revenge in 19s 😮‍💨 Abdallah Ondash KOs Chokpreecha at The Inner Circle 24 , July’s fastest finish!",
-      "published": "2026-08-12T07:00:27.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i3.ytimg.com/vi/FyNq6LVVLDo/hqdefault.jpg",
-      "views": 8529,
-      "score": 8,
-      "rank": 42.44
+      "rank": 42.03
     },
     {
       "id": "LZ_QIm_cB-A",
@@ -653,7 +653,7 @@
       "thumbnail": "https://i1.ytimg.com/vi/LZ_QIm_cB-A/hqdefault.jpg",
       "views": 56023,
       "score": 8,
-      "rank": 42.44
+      "rank": 41.93
     },
     {
       "id": "oGOmwYTMf7I",
@@ -665,7 +665,43 @@
       "thumbnail": "https://i4.ytimg.com/vi/oGOmwYTMf7I/hqdefault.jpg",
       "views": 49025,
       "score": 8,
-      "rank": 42.43
+      "rank": 41.88
+    },
+    {
+      "id": "OM4ZfMAEQoI",
+      "title": "Hokit In Action! | Josh Hokit v Spencer Smith | Full Fight",
+      "published": "2026-08-12T19:00:17.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i4.ytimg.com/vi/OM4ZfMAEQoI/hqdefault.jpg",
+      "views": 8134,
+      "score": 8,
+      "rank": 41.81
+    },
+    {
+      "id": "qshT-RzXMrg",
+      "title": "ABSOLUTE WAR! | Omar El Dafrawy v Jonathan Piersma | Full Fight | PFL New York",
+      "published": "2026-08-12T22:00:16.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i2.ytimg.com/vi/qshT-RzXMrg/hqdefault.jpg",
+      "views": 7348,
+      "score": 8,
+      "rank": 41.77
+    },
+    {
+      "id": "FyNq6LVVLDo",
+      "title": "Revenge in 19s 😮‍💨 Abdallah Ondash KOs Chokpreecha at The Inner Circle 24 , July’s fastest finish!",
+      "published": "2026-08-12T07:00:27.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i3.ytimg.com/vi/FyNq6LVVLDo/hqdefault.jpg",
+      "views": 8529,
+      "score": 8,
+      "rank": 41.4
     },
     {
       "id": "ZxfGnzVQy8I",
@@ -677,7 +713,19 @@
       "thumbnail": "https://i3.ytimg.com/vi/ZxfGnzVQy8I/hqdefault.jpg",
       "views": 541836,
       "score": 3,
-      "rank": 41.96
+      "rank": 40.46
+    },
+    {
+      "id": "x8P8HPt5xbk",
+      "title": "BIRTHDAY KO 🎂 Marcos Aurelio stops Jhanlo Mark Sangiao in 57 seconds!",
+      "published": "2026-08-15T03:38:23.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i1.ytimg.com/vi/x8P8HPt5xbk/hqdefault.jpg",
+      "views": 56468,
+      "score": 4,
+      "rank": 40.39
     },
     {
       "id": "5uaqPrgGORA",
@@ -689,7 +737,7 @@
       "thumbnail": "https://i2.ytimg.com/vi/5uaqPrgGORA/hqdefault.jpg",
       "views": 10123,
       "score": 8,
-      "rank": 41.14
+      "rank": 40.38
     },
     {
       "id": "-7L-FwRhvMM",
@@ -701,7 +749,7 @@
       "thumbnail": "https://i2.ytimg.com/vi/-7L-FwRhvMM/hqdefault.jpg",
       "views": 233220,
       "score": 5,
-      "rank": 40.63
+      "rank": 39.87
     },
     {
       "id": "R5Mp3SexJh4",
@@ -713,7 +761,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/R5Mp3SexJh4/hqdefault.jpg",
       "views": 4062,
       "score": 8,
-      "rank": 40.6
+      "rank": 39.67
     },
     {
       "id": "kfy00YHn_X8",
@@ -725,7 +773,7 @@
       "thumbnail": "https://i4.ytimg.com/vi/kfy00YHn_X8/hqdefault.jpg",
       "views": 13334,
       "score": 8,
-      "rank": 39.93
+      "rank": 39.42
     },
     {
       "id": "D95ZLdBITwE",
@@ -735,68 +783,8 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/D95ZLdBITwE/hqdefault.jpg",
-      "views": 15611,
+      "views": 15812,
       "score": 8,
-      "rank": 39.51
-    },
-    {
-      "id": "Wra9bNVtk54",
-      "title": "Khabib Nurmagomedov was nervous before Makhachev vs Poirier #ufc330",
-      "published": "2026-08-14T13:30:17.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i4.ytimg.com/vi/Wra9bNVtk54/hqdefault.jpg",
-      "views": 61725,
-      "score": 3,
-      "rank": 39.32
-    },
-    {
-      "id": "sK94UG1JLxo",
-      "title": "THE BUTCHER is victorious! 🏆 | BRYAN BATTLE vs. DALTON ROSTA - Fight Highlights | PFL Charlotte",
-      "published": "2026-08-08T04:46:34.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i4.ytimg.com/vi/sK94UG1JLxo/hqdefault.jpg",
-      "views": 9154,
-      "score": 8,
-      "rank": 39.29
-    },
-    {
-      "id": "x_7aY9xlWzg",
-      "title": "King Mo v Satoshi Ishii (石井 慧), AND MORE! | Bellator 169 - Full Main Event",
-      "published": "2026-08-09T19:00:23.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i1.ytimg.com/vi/x_7aY9xlWzg/hqdefault.jpg",
-      "views": 15193,
-      "score": 7,
-      "rank": 39.18
-    },
-    {
-      "id": "0EAtEsp_rsI",
-      "title": "#クレベルコイケ vs  #秋元強真 #RIZIN54",
-      "published": "2026-08-11T10:07:03.000Z",
-      "source": "rizin",
-      "sourceName": "RIZIN",
-      "channel": "RIZIN FIGHTING FEDERATION",
-      "thumbnail": "https://i1.ytimg.com/vi/0EAtEsp_rsI/hqdefault.jpg",
-      "views": 681916,
-      "score": 3,
-      "rank": 39.13
-    },
-    {
-      "id": "uM7zdoi4Avc",
-      "title": "Jaw-Dropping Highlights From Dana White's Contender Series Episode 1",
-      "published": "2026-08-12T01:41:03.000Z",
-      "source": "ufc",
-      "sourceName": "UFC",
-      "channel": "UFC",
-      "thumbnail": "https://i2.ytimg.com/vi/uM7zdoi4Avc/hqdefault.jpg",
-      "views": 145049,
-      "score": 3,
       "rank": 39.11
     },
     {
@@ -809,7 +797,31 @@
       "thumbnail": "https://i4.ytimg.com/vi/oZKG3GPM6Bw/hqdefault.jpg",
       "views": 120125,
       "score": 8,
-      "rank": 38.97
+      "rank": 38.9
+    },
+    {
+      "id": "sK94UG1JLxo",
+      "title": "THE BUTCHER is victorious! 🏆 | BRYAN BATTLE vs. DALTON ROSTA - Fight Highlights | PFL Charlotte",
+      "published": "2026-08-08T04:46:34.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/sK94UG1JLxo/hqdefault.jpg",
+      "views": 9154,
+      "score": 8,
+      "rank": 38.78
+    },
+    {
+      "id": "x_7aY9xlWzg",
+      "title": "King Mo v Satoshi Ishii (石井 慧), AND MORE! | Bellator 169 - Full Main Event",
+      "published": "2026-08-09T19:00:23.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i1.ytimg.com/vi/x_7aY9xlWzg/hqdefault.jpg",
+      "views": 15447,
+      "score": 7,
+      "rank": 38.55
     },
     {
       "id": "csL3jX9efmQ",
@@ -821,7 +833,43 @@
       "thumbnail": "https://i4.ytimg.com/vi/csL3jX9efmQ/hqdefault.jpg",
       "views": 21086,
       "score": 7,
-      "rank": 38.84
+      "rank": 38.31
+    },
+    {
+      "id": "0EAtEsp_rsI",
+      "title": "#クレベルコイケ vs  #秋元強真 #RIZIN54",
+      "published": "2026-08-11T10:07:03.000Z",
+      "source": "rizin",
+      "sourceName": "RIZIN",
+      "channel": "RIZIN FIGHTING FEDERATION",
+      "thumbnail": "https://i1.ytimg.com/vi/0EAtEsp_rsI/hqdefault.jpg",
+      "views": 681916,
+      "score": 3,
+      "rank": 38.26
+    },
+    {
+      "id": "uM7zdoi4Avc",
+      "title": "Jaw-Dropping Highlights From Dana White's Contender Series Episode 1",
+      "published": "2026-08-12T01:41:03.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i2.ytimg.com/vi/uM7zdoi4Avc/hqdefault.jpg",
+      "views": 145049,
+      "score": 3,
+      "rank": 38.12
+    },
+    {
+      "id": "usZQOZzXc6Y",
+      "title": "Pitbull v Curran II, Lashley's MMA Debut & MORE! | Bellator 123 - Full Main Event",
+      "published": "2026-08-02T16:00:07.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/usZQOZzXc6Y/hqdefault.jpg",
+      "views": 48465,
+      "score": 7,
+      "rank": 37.75
     },
     {
       "id": "PtSAvbcEkfU",
@@ -833,19 +881,19 @@
       "thumbnail": "https://i1.ytimg.com/vi/PtSAvbcEkfU/hqdefault.jpg",
       "views": 15095,
       "score": 7,
-      "rank": 38.16
+      "rank": 37.64
     },
     {
-      "id": "usZQOZzXc6Y",
-      "title": "Pitbull v Curran II, Lashley's MMA Debut & MORE! | Bellator 123 - Full Main Event",
-      "published": "2026-08-02T16:00:07.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i2.ytimg.com/vi/usZQOZzXc6Y/hqdefault.jpg",
-      "views": 47589,
-      "score": 7,
-      "rank": 37.98
+      "id": "Wra9bNVtk54",
+      "title": "Khabib Nurmagomedov was nervous before Makhachev vs Poirier #ufc330",
+      "published": "2026-08-14T13:30:17.000Z",
+      "source": "ufc",
+      "sourceName": "UFC",
+      "channel": "UFC",
+      "thumbnail": "https://i4.ytimg.com/vi/Wra9bNVtk54/hqdefault.jpg",
+      "views": 61725,
+      "score": 3,
+      "rank": 37.57
     },
     {
       "id": "AJhL5WOmE9E",
@@ -855,9 +903,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i2.ytimg.com/vi/AJhL5WOmE9E/hqdefault.jpg",
-      "views": 2830,
+      "views": 2838,
       "score": 8,
-      "rank": 37.52
+      "rank": 36.98
     },
     {
       "id": "Vx32HUKBlA0",
@@ -869,7 +917,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/Vx32HUKBlA0/hqdefault.jpg",
       "views": 2335,
       "score": 8,
-      "rank": 36.89
+      "rank": 36.38
     },
     {
       "id": "R8ySACsjIqM",
@@ -881,7 +929,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/R8ySACsjIqM/hqdefault.jpg",
       "views": 190610,
       "score": 3,
-      "rank": 36.88
+      "rank": 36.02
     },
     {
       "id": "adhNQxwW9Eo",
@@ -893,31 +941,19 @@
       "thumbnail": "https://i2.ytimg.com/vi/adhNQxwW9Eo/hqdefault.jpg",
       "views": 27065,
       "score": 4,
-      "rank": 36.77
+      "rank": 35.68
     },
     {
-      "id": "HoSygRoivu4",
-      "title": "Dropping BOMBS 💣 Babak Haghi batters Chamanow for a first-round KO!",
-      "published": "2026-08-14T15:02:01.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i1.ytimg.com/vi/HoSygRoivu4/hqdefault.jpg",
-      "views": 4012,
-      "score": 4,
-      "rank": 36.7
-    },
-    {
-      "id": "SKISFeQnFNU",
-      "title": "Feel that IMPACT💥 Nico Carrillo makes his kickboxing debut vs. Zhou Jiaqiang at ONE Fight Night 46!",
-      "published": "2026-08-13T03:00:01.000Z",
-      "source": "one",
-      "sourceName": "ONE Championship",
-      "channel": "ONE Championship",
-      "thumbnail": "https://i4.ytimg.com/vi/SKISFeQnFNU/hqdefault.jpg",
-      "views": 31713,
-      "score": 3,
-      "rank": 35.77
+      "id": "-GRHneaCKDA",
+      "title": "How To Make A STATEMENT! | Johnny Eblen v Impa Kasanganay | PFL Austin | Full Fight",
+      "published": "2026-07-27T16:00:23.000Z",
+      "source": "bellator",
+      "sourceName": "Bellator",
+      "channel": "BellatorMMA",
+      "thumbnail": "https://i2.ytimg.com/vi/-GRHneaCKDA/hqdefault.jpg",
+      "views": 7168,
+      "score": 8,
+      "rank": 35.27
     },
     {
       "id": "lmStfWKphj4",
@@ -929,19 +965,19 @@
       "thumbnail": "https://i1.ytimg.com/vi/lmStfWKphj4/hqdefault.jpg",
       "views": 38540,
       "score": 5,
-      "rank": 35.76
+      "rank": 35.25
     },
     {
-      "id": "-GRHneaCKDA",
-      "title": "How To Make A STATEMENT! | Johnny Eblen v Impa Kasanganay | PFL Austin | Full Fight",
-      "published": "2026-07-27T16:00:23.000Z",
-      "source": "bellator",
-      "sourceName": "Bellator",
-      "channel": "BellatorMMA",
-      "thumbnail": "https://i2.ytimg.com/vi/-GRHneaCKDA/hqdefault.jpg",
-      "views": 7163,
-      "score": 8,
-      "rank": 35.43
+      "id": "HoSygRoivu4",
+      "title": "Dropping BOMBS 💣 Babak Haghi batters Chamanow for a first-round KO!",
+      "published": "2026-08-14T15:02:01.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i1.ytimg.com/vi/HoSygRoivu4/hqdefault.jpg",
+      "views": 4012,
+      "score": 4,
+      "rank": 34.92
     },
     {
       "id": "lLPhdivuDA0",
@@ -953,7 +989,19 @@
       "thumbnail": "https://i1.ytimg.com/vi/lLPhdivuDA0/hqdefault.jpg",
       "views": 93293,
       "score": 3,
-      "rank": 35.33
+      "rank": 34.81
+    },
+    {
+      "id": "SKISFeQnFNU",
+      "title": "Feel that IMPACT💥 Nico Carrillo makes his kickboxing debut vs. Zhou Jiaqiang at ONE Fight Night 46!",
+      "published": "2026-08-13T03:00:01.000Z",
+      "source": "one",
+      "sourceName": "ONE Championship",
+      "channel": "ONE Championship",
+      "thumbnail": "https://i4.ytimg.com/vi/SKISFeQnFNU/hqdefault.jpg",
+      "views": 31713,
+      "score": 3,
+      "rank": 34.53
     },
     {
       "id": "vvU99yTvU6I",
@@ -965,7 +1013,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/vvU99yTvU6I/hqdefault.jpg",
       "views": 9118,
       "score": 8,
-      "rank": 34.13
+      "rank": 34.07
     },
     {
       "id": "F4exA-FFuOY",
@@ -977,7 +1025,7 @@
       "thumbnail": "https://i3.ytimg.com/vi/F4exA-FFuOY/hqdefault.jpg",
       "views": 20843,
       "score": 6,
-      "rank": 33.73
+      "rank": 33.67
     },
     {
       "id": "Wg-CyRSqx8k",
@@ -987,9 +1035,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i4.ytimg.com/vi/Wg-CyRSqx8k/hqdefault.jpg",
-      "views": 5030,
+      "views": 5067,
       "score": 7,
-      "rank": 33.2
+      "rank": 33.03
     },
     {
       "id": "xtAz78gY2E0",
@@ -999,9 +1047,9 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/xtAz78gY2E0/hqdefault.jpg",
-      "views": 9859,
+      "views": 9871,
       "score": 7,
-      "rank": 33.01
+      "rank": 32.92
     },
     {
       "id": "3k3BwAGiRY4",
@@ -1011,21 +1059,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i4.ytimg.com/vi/3k3BwAGiRY4/hqdefault.jpg",
-      "views": 157604,
+      "views": 158046,
       "score": 4,
-      "rank": 32.65
-    },
-    {
-      "id": "S5D6UHXBfx8",
-      "title": "PFL x MVP: Van Steenis vs. Eblen, Jake Paul & the Dream Fights We Need",
-      "published": "2026-08-14T16:00:05.000Z",
-      "source": "pfl",
-      "sourceName": "PFL",
-      "channel": "PFL MMA",
-      "thumbnail": "https://i4.ytimg.com/vi/S5D6UHXBfx8/hqdefault.jpg",
-      "views": 699,
-      "score": 3,
-      "rank": 31.75
+      "rank": 32.52
     },
     {
       "id": "uX2H91sbv3c",
@@ -1037,7 +1073,19 @@
       "thumbnail": "https://i2.ytimg.com/vi/uX2H91sbv3c/hqdefault.jpg",
       "views": 36322,
       "score": 3,
-      "rank": 31.66
+      "rank": 31.15
+    },
+    {
+      "id": "S5D6UHXBfx8",
+      "title": "PFL x MVP: Van Steenis vs. Eblen, Jake Paul & the Dream Fights We Need",
+      "published": "2026-08-14T16:00:05.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i4.ytimg.com/vi/S5D6UHXBfx8/hqdefault.jpg",
+      "views": 699,
+      "score": 3,
+      "rank": 29.95
     },
     {
       "id": "y2U7mdfVCds",
@@ -1047,9 +1095,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i2.ytimg.com/vi/y2U7mdfVCds/hqdefault.jpg",
-      "views": 31471,
+      "views": 31495,
       "score": 4,
-      "rank": 29.84
+      "rank": 29.7
     },
     {
       "id": "ltVu2wtuDVE",
@@ -1059,9 +1107,21 @@
       "sourceName": "Bellator",
       "channel": "BellatorMMA",
       "thumbnail": "https://i1.ytimg.com/vi/ltVu2wtuDVE/hqdefault.jpg",
-      "views": 28814,
+      "views": 28834,
       "score": 4,
-      "rank": 29.72
+      "rank": 29.58
+    },
+    {
+      "id": "x1zHUgLFSfU",
+      "title": "2026 PFL Tampa | Full Event",
+      "published": "2026-08-17T16:24:06.000Z",
+      "source": "pfl",
+      "sourceName": "PFL",
+      "channel": "PFL MMA",
+      "thumbnail": "https://i1.ytimg.com/vi/x1zHUgLFSfU/hqdefault.jpg",
+      "views": 0,
+      "score": 4,
+      "rank": 28.24
     },
     {
       "id": "obWEf4FqEW4",
@@ -1071,9 +1131,9 @@
       "sourceName": "KSW",
       "channel": "KSW",
       "thumbnail": "https://i4.ytimg.com/vi/obWEf4FqEW4/hqdefault.jpg",
-      "views": 4441,
+      "views": 4452,
       "score": 4,
-      "rank": 26.75
+      "rank": 26.59
     },
     {
       "id": "sPgjDg_PDK0",
@@ -1085,7 +1145,7 @@
       "thumbnail": "https://i4.ytimg.com/vi/sPgjDg_PDK0/hqdefault.jpg",
       "views": 4866,
       "score": 3,
-      "rank": 23.53
+      "rank": 23.45
     }
   ],
   "problems": [
